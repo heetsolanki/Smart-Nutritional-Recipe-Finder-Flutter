@@ -1,6 +1,21 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (kIsWeb) {
+    await Firebase.initializeApp(
+      options: FirebaseOptions(
+        apiKey: "AIzaSyCPp0nP8n9Q0bbE6oKpNVYGEWJw9zLaN_c",
+        appId: "1:138489805258:web:fef7ae3051a734fd17b733",
+        messagingSenderId: "138489805258",
+        projectId: "flavorfind-heet",
+      ),
+    );
+  } else {
+    await Firebase.initializeApp();
+  }
   runApp(const MyApp());
 }
 
