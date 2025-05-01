@@ -57,6 +57,27 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  fonts:
+    - family: Fira Sans
+      fonts:
+        - asset: assets/fonts/FiraSans-BoldItalic.ttf
+        - asset: assets/fonts/FiraSans-ExtraBold.ttf
+        - asset: assets/fonts/FiraSans-ExtraBoldItalic.ttf
+        - asset: assets/fonts/FiraSans-ExtraLight.ttf
+        - asset: assets/fonts/FiraSans-ExtraLightItalic.ttf
+        - asset: assets/fonts/FiraSans-Italic.ttf
+        - asset: assets/fonts/FiraSans-Light.ttf
+        - asset: assets/fonts/FiraSans-LightItalic.ttf
+        - asset: assets/fonts/FiraSans-Medium.ttf
+        - asset: assets/fonts/FiraSans-MediumItalic.ttf
+        - asset: assets/fonts/FiraSans-Regular.ttf
+        - asset: assets/fonts/FiraSans-SemiBold.ttf
+        - asset: assets/fonts/FiraSans-SemiBoldItalic.ttf
+        - asset: assets/fonts/FiraSans-Thin.ttf
+        - asset: assets/fonts/FiraSans-ThinItalic.ttf
+        - asset: assets/fonts/FiraSans-Black.ttf
+        - asset: assets/fonts/FiraSans-BlackItalic.ttf
+        - asset: assets/fonts/FiraSans-Bold.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
