@@ -55,12 +55,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final int _currentIndex = 0;
-  final List<Widget> _screens = [
-    HomeScreen(),
-    // TrendingScreen(),
-    // AboutScreen(),
-  ];
+  int _currentIndex = 0;
+
+  final List<Widget> _screens = [HomeScreen(), TrendingScreen(), AboutScreen()];
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,13 +80,15 @@ class _MyHomePageState extends State<MyHomePage> {
           IconButton(onPressed: () {}, icon: Icon(Icons.person), iconSize: 25),
         ],
       ),
+      backgroundColor: Colors.black,
       body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
+        elevation: 10.0,
         backgroundColor: Color.fromRGBO(108, 88, 76, 1),
         selectedItemColor: Color.fromRGBO(173, 193, 120, 1),
         unselectedItemColor: Color.fromRGBO(240, 234, 210, 1),
-        elevation: 10.0,
+        currentIndex: _currentIndex,
+        onTap: _onItemTapped,
         items: [
           BottomNavigationBarItem(
             icon: FaIcon(FontAwesomeIcons.house, size: 18),
