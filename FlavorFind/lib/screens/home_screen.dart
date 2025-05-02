@@ -2,6 +2,7 @@ import '../exports.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+  @override
   HomeScreenState createState() => HomeScreenState();
 }
 
@@ -22,140 +23,138 @@ class HomeScreenState extends State<HomeScreen> {
               ),
             ),
             child: SmoothListView(
+              padding: EdgeInsets.only(top: 25, left: 20, right: 20),
               duration: Duration(seconds: 2),
               children: [
-                Padding(
-                  padding: EdgeInsets.only(top: 65, left: 10, right: 10),
-                  child: Column(
-                    children: [
-                      Text(
-                        'FlavorFind',
-                        style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white,
-                        ),
+                Column(
+                  children: [
+                    Text(
+                      'FlavorFind',
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
                       ),
-                      SizedBox(height: 30),
-                      Text(
-                        'Find delicious recipes with the ingredients you already have at home. \n'
-                        'Say goodbye to food waste and hello to creative cooking!',
-                        style: TextStyle(color: Colors.white),
-                        textAlign: TextAlign.center,
-                      ),
-                      SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        child: Text('Find Recipes'),
-                      ),
-                      SizedBox(height: 60),
-                      Card(
-                        color: Color.fromRGBO(240, 234, 210, 1),
-                        child: SizedBox(
-                          width: 300,
-                          child: Column(
-                            children: [
-                              SizedBox(height: 10),
-                              Text(
-                                'Step 1: \n'
-                                'Click on Find Recipes',
+                    ),
+                    SizedBox(height: 30),
+                    Text(
+                      'Find delicious recipes with the ingredients you already have at home. \n'
+                      'Say goodbye to food waste and hello to creative cooking!',
+                      style: TextStyle(color: Colors.white),
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(height: 30),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text('Find Recipes'),
+                    ),
+                    SizedBox(height: 60),
+                    Card(
+                      color: Color.fromRGBO(240, 234, 210, 1),
+                      child: SizedBox(
+                        width: 300,
+                        child: Column(
+                          children: [
+                            SizedBox(height: 10),
+                            Text(
+                              'Step 1: \n'
+                              'Click on Find Recipes',
+                              style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.w600,
+                                color: Color.fromRGBO(108, 88, 76, 1),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(height: 10),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20),
+                              child: Text(
+                                'Explore various recipes based on the in your kitchen.',
                                 style: TextStyle(
-                                  fontSize: 19,
-                                  fontWeight: FontWeight.w600,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w400,
                                   color: Color.fromRGBO(108, 88, 76, 1),
                                 ),
-                                textAlign: TextAlign.center,
                               ),
-                              SizedBox(height: 10),
-                              Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 20),
-                                child: Text(
-                                  'Explore various recipes based on the in your kitchen.',
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w400,
-                                    color: Color.fromRGBO(108, 88, 76, 1),
-                                  ),
-                                ),
-                              ),
-                              SizedBox(height: 15),
-                            ],
-                          ),
+                            ),
+                            SizedBox(height: 15),
+                          ],
                         ),
                       ),
-                      SizedBox(height: 20),
-                      Card(
-                        color: Color.fromRGBO(240, 234, 210, 1),
-                        child: SizedBox(
-                          width: 300,
-                          child: Column(
-                            children: [
-                              SizedBox(height: 10),
-                              Text(
-                                'Step 2: \n'
-                                'Choose your ingredients',
+                    ),
+                    SizedBox(height: 20),
+                    Card(
+                      color: Color.fromRGBO(240, 234, 210, 1),
+                      child: SizedBox(
+                        width: 300,
+                        child: Column(
+                          children: [
+                            SizedBox(height: 10),
+                            Text(
+                              'Step 2: \n'
+                              'Choose your ingredients',
+                              style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.w600,
+                                color: Color.fromRGBO(108, 88, 76, 1),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(height: 10),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20),
+                              child: Text(
+                                'Select what you have, and we\'ll create something special for you.',
                                 style: TextStyle(
-                                  fontSize: 19,
-                                  fontWeight: FontWeight.w600,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w400,
                                   color: Color.fromRGBO(108, 88, 76, 1),
                                 ),
-                                textAlign: TextAlign.center,
                               ),
-                              SizedBox(height: 10),
-                              Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 20),
-                                child: Text(
-                                  'Select what you have, and we\'ll create something special for you.',
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w400,
-                                    color: Color.fromRGBO(108, 88, 76, 1),
-                                  ),
-                                ),
-                              ),
-                              SizedBox(height: 15),
-                            ],
-                          ),
+                            ),
+                            SizedBox(height: 15),
+                          ],
                         ),
                       ),
-                      SizedBox(height: 20),
-                      Card(
-                        color: Color.fromRGBO(240, 234, 210, 1),
-                        child: SizedBox(
-                          width: 300,
-                          child: Column(
-                            children: [
-                              SizedBox(height: 10),
-                              Text(
-                                'Step 3: \n'
-                                'Get your Recipe',
+                    ),
+                    SizedBox(height: 20),
+                    Card(
+                      color: Color.fromRGBO(240, 234, 210, 1),
+                      child: SizedBox(
+                        width: 300,
+                        child: Column(
+                          children: [
+                            SizedBox(height: 10),
+                            Text(
+                              'Step 3: \n'
+                              'Get your Recipe',
+                              style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.w600,
+                                color: Color.fromRGBO(108, 88, 76, 1),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(height: 10),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20),
+                              child: Text(
+                                'Our smart algorithm will suggest recipes based on your selections!',
                                 style: TextStyle(
-                                  fontSize: 19,
-                                  fontWeight: FontWeight.w600,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w400,
                                   color: Color.fromRGBO(108, 88, 76, 1),
                                 ),
-                                textAlign: TextAlign.center,
                               ),
-                              SizedBox(height: 10),
-                              Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 20),
-                                child: Text(
-                                  'Our smart algorithm will suggest recipes based on your selections!',
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w400,
-                                    color: Color.fromRGBO(108, 88, 76, 1),
-                                  ),
-                                ),
-                              ),
-                              SizedBox(height: 15),
-                            ],
-                          ),
+                            ),
+                            SizedBox(height: 15),
+                          ],
                         ),
                       ),
-                      SizedBox(height: 30),
-                    ],
-                  ),
+                    ),
+                    SizedBox(height: 30),
+                  ],
                 ),
               ],
             ),
