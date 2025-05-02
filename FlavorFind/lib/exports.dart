@@ -6,4 +6,6 @@ export 'package:flutter/material.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:smooth_list_view/smooth_list_view.dart';
 
+export 'screens/about_screen.dart';
 export 'screens/home_screen.dart';
+export 'screens/trending_screen.dart';
