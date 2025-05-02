@@ -24,7 +24,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FlavorFind',
-      theme: ThemeData(fontFamily: 'Fira Sans'),
+      theme: ThemeData(
+        fontFamily: 'Fira Sans',
+        // ElevatedButton Theme
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(5),
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 25, vertical: 16),
+            backgroundColor: Color.fromRGBO(108, 88, 76, 1),
+            foregroundColor: Color.fromRGBO(240, 234, 210, 1),
+            elevation: 10.0,
+            animationDuration: Duration(seconds: 2),
+          ),
+        ),
+      ),
       home: const MyHomePage(),
     );
   }
@@ -40,6 +55,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final int _currentIndex = 0;
+  final List<Widget> _screens = [
+    HomeScreen(),
+    // TrendingScreen(),
+    // AboutScreen(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,9 +76,9 @@ class _MyHomePageState extends State<MyHomePage> {
           IconButton(onPressed: () {}, icon: Icon(Icons.person), iconSize: 25),
         ],
       ),
-      // body: ,
+      body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
+        currentIndex: _currentIndex,
         backgroundColor: Color.fromRGBO(108, 88, 76, 1),
         selectedItemColor: Color.fromRGBO(173, 193, 120, 1),
         unselectedItemColor: Color.fromRGBO(240, 234, 210, 1),
