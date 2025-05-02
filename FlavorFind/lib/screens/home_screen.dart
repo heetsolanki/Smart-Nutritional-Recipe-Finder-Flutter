@@ -23,15 +23,15 @@ class HomeScreenState extends State<HomeScreen> {
               ),
             ),
             child: SmoothListView(
-              padding: EdgeInsets.only(top: 25, left: 20, right: 20),
-              duration: Duration(seconds: 2),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 25),
+              duration: Duration(milliseconds: 250),
               children: [
                 Column(
                   children: [
                     Text(
                       'FlavorFind',
                       style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 35,
                         fontWeight: FontWeight.w600,
                         color: Colors.white,
                       ),
@@ -40,7 +40,7 @@ class HomeScreenState extends State<HomeScreen> {
                     Text(
                       'Find delicious recipes with the ingredients you already have at home. \n'
                       'Say goodbye to food waste and hello to creative cooking!',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(fontSize: 18, color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 30),
@@ -153,7 +153,6 @@ class HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 30),
                   ],
                 ),
               ],

@@ -24,12 +24,12 @@ class AboutScreenState extends State<AboutScreen> {
             ),
             child: SmoothListView(
               padding: EdgeInsets.symmetric(vertical: 25, horizontal: 20),
-              duration: Duration(seconds: 2),
+              duration: Duration(milliseconds: 250),
               children: [
                 Text(
                   'About Us',
                   style: TextStyle(
-                    fontSize: 27,
+                    fontSize: 30,
                     fontWeight: FontWeight.w600,
                     color: Color.fromRGBO(108, 88, 76, 1),
                   ),
@@ -44,13 +44,13 @@ class AboutScreenState extends State<AboutScreen> {
                   'reduce food waste while discovering delicious,'
                   'easy-to-make recipes tailored to what\'s in your kitchen.'
                   'No more last-minute grocery runs!',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(fontSize: 18, color: Colors.white),
                 ),
                 SizedBox(height: 30),
                 Text(
                   'Meet the Developer',
                   style: TextStyle(
-                    fontSize: 27,
+                    fontSize: 30,
                     fontWeight: FontWeight.w600,
                     color: Color.fromRGBO(108, 88, 76, 1),
                   ),
@@ -105,7 +105,7 @@ class AboutScreenState extends State<AboutScreen> {
                         Text(
                           'Our Mission',
                           style: TextStyle(
-                            fontSize: 27,
+                            fontSize: 30,
                             fontWeight: FontWeight.w600,
                             color: Color.fromRGBO(108, 88, 76, 1),
                           ),

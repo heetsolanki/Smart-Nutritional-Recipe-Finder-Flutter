@@ -37,6 +37,10 @@ class MyApp extends StatelessWidget {
             foregroundColor: Color.fromRGBO(240, 234, 210, 1),
             elevation: 10.0,
             animationDuration: Duration(seconds: 2),
+            textStyle: TextStyle(
+              fontSize: 16,
+              color: Color.fromRGBO(240, 234, 210, 1),
+            ),
           ),
         ),
       ),
@@ -74,16 +78,17 @@ class _MyHomePageState extends State<MyHomePage> {
         foregroundColor: Color.fromRGBO(240, 234, 210, 1),
         title: Text(
           'FlavorFind',
-          style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
         ),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.person), iconSize: 25),
+          IconButton(onPressed: () {}, icon: Icon(Icons.person), iconSize: 27),
         ],
       ),
       backgroundColor: Colors.black,
       body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         elevation: 10.0,
+        iconSize: 23,
         backgroundColor: Color.fromRGBO(108, 88, 76, 1),
         selectedItemColor: Color.fromRGBO(173, 193, 120, 1),
         unselectedItemColor: Color.fromRGBO(240, 234, 210, 1),
@@ -91,15 +96,15 @@ class _MyHomePageState extends State<MyHomePage> {
         onTap: _onItemTapped,
         items: [
           BottomNavigationBarItem(
-            icon: FaIcon(FontAwesomeIcons.house, size: 18),
+            icon: FaIcon(FontAwesomeIcons.house),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: FaIcon(FontAwesomeIcons.arrowTrendUp, size: 18),
+            icon: FaIcon(FontAwesomeIcons.arrowTrendUp),
             label: 'Trending',
           ),
           BottomNavigationBarItem(
-            icon: FaIcon(FontAwesomeIcons.info, size: 18),
+            icon: FaIcon(FontAwesomeIcons.info),
             label: 'About',
           ),
         ],
