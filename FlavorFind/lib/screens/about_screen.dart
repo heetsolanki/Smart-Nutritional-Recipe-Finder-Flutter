@@ -31,7 +31,7 @@ class AboutScreenState extends State<AboutScreen> {
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.w600,
-                    color: Color.fromRGBO(108, 88, 76, 1),
+                    color: Colors.white,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -44,7 +44,7 @@ class AboutScreenState extends State<AboutScreen> {
                   'reduce food waste while discovering delicious,'
                   'easy-to-make recipes tailored to what\'s in your kitchen.'
                   'No more last-minute grocery runs!',
-                  style: TextStyle(fontSize: 18, color: Colors.white),
+                  style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
                 SizedBox(height: 30),
                 Text(
@@ -52,7 +52,7 @@ class AboutScreenState extends State<AboutScreen> {
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.w600,
-                    color: Color.fromRGBO(108, 88, 76, 1),
+                    color: Colors.white,
                   ),
                   textAlign: TextAlign.center,
                 ),
