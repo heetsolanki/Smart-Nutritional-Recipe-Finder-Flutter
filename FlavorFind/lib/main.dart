@@ -45,6 +45,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: const MyHomePage(),
+      routes: {'/findRecipes': (context) => FindRecipesScreen()},
     );
   }
 }

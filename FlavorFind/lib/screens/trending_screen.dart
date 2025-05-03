@@ -9,6 +9,37 @@ class TrendingScreen extends StatefulWidget {
 class TrendingScreenState extends State<TrendingScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Stack(
+        alignment: Alignment.topCenter,
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                opacity: 0.35,
+                image: AssetImage('assets/images/background-image.png'),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: SmoothListView(
+              padding: EdgeInsets.symmetric(vertical: 25, horizontal: 20),
+              duration: Duration(milliseconds: 250),
+              children: [
+                Text(
+                  'Trending Recipes',
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

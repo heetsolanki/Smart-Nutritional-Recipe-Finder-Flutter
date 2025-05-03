@@ -45,8 +45,13 @@ class HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(height: 30),
                     ElevatedButton(
-                      onPressed: () {},
-                      child: Text('Find Recipes'),
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/findRecipes');
+                      },
+                      child: Text(
+                        'Find Recipes',
+                        style: TextStyle(fontWeight: FontWeight.w400),
+                      ),
                     ),
                     SizedBox(height: 60),
                     Card(
