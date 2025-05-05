@@ -220,12 +220,21 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
     }
 
     if (selectedIngredients.isNotEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Selected Ingredients: $selectedIngredients'),
-          duration: Duration(seconds: 2),
-        ),
-      );
+      if (selectedIngredients.length >= 2) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Selected Ingredients: $selectedIngredients'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      } else if (selectedIngredients.length == 1) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Please select at least 2 ingredients'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
