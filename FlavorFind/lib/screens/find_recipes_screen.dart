@@ -52,7 +52,6 @@ class IngredientCategoryCard extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 15),
-
               Wrap(
                 spacing: 8.0,
                 alignment: WrapAlignment.start,
@@ -83,7 +82,10 @@ class IngredientCategoryCard extends StatelessWidget {
                               },
                               title: Text(
                                 ingredient,
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ),
                               ),
                             ),
                           ),
