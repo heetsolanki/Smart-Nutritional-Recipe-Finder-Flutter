@@ -68,6 +68,12 @@ class RecipeCard extends StatelessWidget {
                     ),
                     SizedBox(height: 15),
                     ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 15,
+                          vertical: 20,
+                        ),
+                      ),
                       onPressed: () {},
                       child: Text('View Recipe'),
                     ),
