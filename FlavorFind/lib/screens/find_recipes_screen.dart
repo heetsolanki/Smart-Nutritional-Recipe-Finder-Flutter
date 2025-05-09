@@ -31,7 +31,6 @@ class IngredientCategoryCard extends StatelessWidget {
       elevation: 12.0,
       color: Color.fromRGBO(0, 0, 0, 0.6),
       child: SizedBox(
-        // height: 300,
         width: 350,
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 15, vertical: 18),
@@ -200,6 +199,8 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
       },
     ),
   ];
+  final potatoCheeseOliveOil = <String>['Cheese', 'Potato', 'Olive Oil'];
+  final selectedIngredients = <String>[];
 
   void _handleSelections(
     IngredientCategory category,
@@ -212,7 +213,7 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
   }
 
   void _saveAndFindRecipes() {
-    final selectedIngredients = <String>[];
+    selectedIngredients.clear();
     for (var category in categories) {
       category.selections.forEach((ingredient, isSelected) {
         if (isSelected) {
@@ -229,6 +230,7 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
             duration: Duration(seconds: 2),
           ),
         );
+        _findRecipes();
       } else if (selectedIngredients.length == 1) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -245,6 +247,31 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
         ),
       );
     }
+  }
+
+  void _findRecipes() {
+    switch (selectedIngredients) {
+      case ['Cheese', 'Potato', 'Olive Oil'] ||
+          ['Cheese', 'Potato'] ||
+          ['Cheese', 'Olive Oil'] ||
+          ['Potato', 'Olive Oil']:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => PotatoCheeseOliveOil()),
+        );
+        break;
+    }
+  }
+
+  void _uncheckAll() {
+    setState(() {
+      for (var category in categories) {
+        category.selections.forEach((ingredient, isSelected) {
+          category.selections[ingredient] = false;
+        });
+      }
+    });
+    selectedIngredients.clear();
   }
 
   @override
@@ -287,7 +314,16 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
                   ),
                   textAlign: TextAlign.left,
                 ),
-                SizedBox(height: 30),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: IconButton(
+                    onPressed: _uncheckAll,
+                    icon: Icon(Icons.refresh),
+                    tooltip: 'Clear Selection',
+                    color: Color.fromRGBO(240, 234, 210, 1),
+                    iconSize: 30,
+                  ),
+                ),
                 ...categories.map(
                   (category) => IngredientCategoryCard(
                     category: category,
