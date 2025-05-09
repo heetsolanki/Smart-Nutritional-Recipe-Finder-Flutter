@@ -7,6 +7,7 @@ export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:smooth_list_view/smooth_list_view.dart';
 
 export 'recipe_card.dart';
+export 'recipe_screens/mango_chickpeas_canolaoil.dart';
 export 'recipe_screens/potato_cheese_oliveoil.dart';
 export 'screens/about_screen.dart';
 export 'screens/find_recipes_screen.dart';
