@@ -260,6 +260,15 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
           MaterialPageRoute(builder: (context) => PotatoCheeseOliveOil()),
         );
         break;
+      case ['Mango', 'Chickpeas', 'Canola Oil'] ||
+          ['Mango', 'Canola Oil'] ||
+          ['Mango', 'Chickpeas'] ||
+          ['Chickpeas', 'Canola Oil']:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => MangoChickpeasCanolaOil()),
+        );
+        break;
     }
   }
 
