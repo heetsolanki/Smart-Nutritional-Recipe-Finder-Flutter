@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'FlavorFind',
       theme: ThemeData(
+        // Font Family
         fontFamily: 'Fira Sans',
         // ElevatedButton Theme
         elevatedButtonTheme: ElevatedButtonThemeData(

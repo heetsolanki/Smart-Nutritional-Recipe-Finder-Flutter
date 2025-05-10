@@ -61,21 +61,19 @@ class _MangoChickpeasCanolaOilState extends State<MangoChickpeasCanolaOil> {
               ),
             ),
           ),
-          Expanded(
-            child: SmoothListView.builder(
-              duration: Duration(milliseconds: 350),
-              itemCount: recipes.length,
-              itemBuilder: (context, index) {
-                return RecipeCard(
-                  recipe: Recipes(
-                    id: recipes[index]['id'],
-                    recipeName: recipes[index]['recipeName'],
-                    recipeImage: recipes[index]['recipeImage'],
-                    recipeDescription: recipes[index]['recipeDescription'],
-                  ),
-                );
-              },
-            ),
+          SmoothListView.builder(
+            duration: Duration(milliseconds: 350),
+            itemCount: recipes.length,
+            itemBuilder: (context, index) {
+              return RecipeCard(
+                recipe: Recipes(
+                  id: recipes[index]['id'],
+                  recipeName: recipes[index]['recipeName'],
+                  recipeImage: recipes[index]['recipeImage'],
+                  recipeDescription: recipes[index]['recipeDescription'],
+                ),
+              );
+            },
           ),
         ],
       ),
