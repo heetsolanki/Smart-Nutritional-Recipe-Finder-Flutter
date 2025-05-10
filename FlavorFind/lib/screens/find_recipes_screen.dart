@@ -1,5 +1,3 @@
-import 'package:flavorfind/recipe_screens/paneer_tomato_sesameoil.dart';
-
 import '../exports.dart';
 
 class IngredientCategory {
@@ -252,38 +250,7 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
   }
 
   void _findRecipes() {
-    switch (selectedIngredients) {
-      // Cheese Potato Olive Oil group
-      case ['Cheese', 'Potato', 'Olive Oil'] ||
-          ['Cheese', 'Potato'] ||
-          ['Cheese', 'Olive Oil'] ||
-          ['Potato', 'Olive Oil']:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => PotatoCheeseOliveOil()),
-        );
-        break;
-      // Mango Chickpeas Canola Oil group
-      case ['Mango', 'Chickpeas', 'Canola Oil'] ||
-          ['Mango', 'Canola Oil'] ||
-          ['Mango', 'Chickpeas'] ||
-          ['Chickpeas', 'Canola Oil']:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => MangoChickpeasCanolaOil()),
-        );
-        break;
-      // Paneer Tomato Sesame Oil group
-      case ['Paneer', 'Tomato', 'Sesame Oil'] ||
-          ['Paneer', 'Sesame Oil'] ||
-          ['Paneer', 'Tomato'] ||
-          ['Tomato', 'Sesame Oil']:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => PaneerTomatoSesameOil()),
-        );
-        break;
-    }
+    switch (selectedIngredients) {}
   }
 
   void _uncheckAll() {
