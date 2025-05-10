@@ -250,7 +250,17 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
   }
 
   void _findRecipes() {
-    switch (selectedIngredients) {}
+    switch (selectedIngredients) {
+      case ['Cheese', 'Potato', 'Olive Oil'] ||
+          ['Cheese', 'Potato'] ||
+          ['Potato', 'Olive Oil'] ||
+          ['Cheese', 'Olive Oil']:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => CheesePotatoOliveOil()),
+        );
+        break;
+    }
   }
 
   void _uncheckAll() {
