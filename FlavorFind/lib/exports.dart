@@ -9,6 +9,8 @@ export 'package:smooth_list_view/smooth_list_view.dart';
 export 'recipe_card.dart';
 export 'recipe_screens/cheese_potato_olive_oil.dart';
 export 'recipe_screens/mango_chickpeas_canola_oil.dart';
+export 'recipe_screens/paneer_tomato_sesame_oil.dart';
+export 'recipes.dart';
 export 'screens/about_screen.dart';
 export 'screens/find_recipes_screen.dart';
 export 'screens/home_screen.dart';
