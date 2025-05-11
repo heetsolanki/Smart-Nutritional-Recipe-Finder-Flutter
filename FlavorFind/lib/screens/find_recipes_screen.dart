@@ -251,6 +251,7 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
 
   void _findRecipes() {
     switch (selectedIngredients) {
+      // Cheese Potato Olive-Oil group
       case ['Cheese', 'Potato', 'Olive Oil'] ||
           ['Cheese', 'Potato'] ||
           ['Potato', 'Olive Oil'] ||
@@ -260,6 +261,7 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
           MaterialPageRoute(builder: (context) => CheesePotatoOliveOil()),
         );
         break;
+      // Mango Chickpeas Canola-Oil group
       case ['Mango', 'Chickpeas', 'Canola Oil'] ||
           ['Mango', 'Chickpeas'] ||
           ['Mango', 'Canola Oil'] ||
@@ -267,6 +269,16 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => MangoChickpeasCanolaOil()),
+        );
+        break;
+      // Paneer Tomato Sesame-Oil group
+      case ['Paneer', 'Tomato', 'Sesame Oil'] ||
+          ['Paneer', 'Tomato'] ||
+          ['Paneer', 'Sesame Oil'] ||
+          ['Tomato', 'Sesame Oil']:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => PaneerTomatoSesameOil()),
         );
         break;
     }
