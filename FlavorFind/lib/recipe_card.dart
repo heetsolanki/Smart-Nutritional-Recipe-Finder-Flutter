@@ -1,91 +1,108 @@
 import 'exports.dart';
 
-class Recipes {
-  final int id;
-  final String recipeName;
-  final String recipeImage;
-  final String recipeDescription;
-
-  Recipes({
-    required this.id,
-    required this.recipeName,
-    required this.recipeImage,
-    required this.recipeDescription,
-  });
-}
-
 class RecipeCard extends StatelessWidget {
-  final Recipes recipe;
-  const RecipeCard({super.key, required this.recipe});
+  final List<Map<String, dynamic>> matchedRecipe;
+
+  const RecipeCard({super.key, required this.matchedRecipe});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: 12.5),
-      child: Column(
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 10.0,
+        backgroundColor: Color.fromRGBO(108, 88, 76, 1),
+        foregroundColor: Color.fromRGBO(240, 234, 210, 1),
+        title: Text(
+          'FlavorFind',
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.favorite),
+            iconSize: 27,
+          ),
+        ],
+      ),
+      backgroundColor: Colors.black,
+      body: Stack(
+        alignment: Alignment.topCenter,
         children: [
-          Card(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-              side: BorderSide(
-                color: Color.fromRGBO(108, 88, 76, 1),
-                width: 0.5,
+          Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                opacity: 0.35,
+                image: AssetImage('assets/images/background-image.png'),
+                fit: BoxFit.cover,
               ),
             ),
-            elevation: 12.0,
-            color: Color.fromRGBO(0, 0, 0, 0.6),
-            child: SizedBox(
-              width: 350,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15, vertical: 25),
-                child: Column(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(25),
-                      child: Image.asset(recipe.recipeImage),
+            child: SmoothListView.builder(
+              physics: ScrollPhysics(parent: BouncingScrollPhysics()),
+              smoothScroll: true,
+              duration: Duration(milliseconds: 350),
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+              itemCount: matchedRecipe.length,
+              itemBuilder: (context, index) {
+                final recipe = matchedRecipe[index];
+                return Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    side: BorderSide(
+                      color: Color.fromRGBO(108, 88, 76, 1),
+                      width: 0.5,
                     ),
-                    SizedBox(height: 8),
-                    SizedBox(
-                      width: 350,
-                      child: Text(
-                        recipe.recipeName,
-                        style: TextStyle(
-                          fontSize: 28,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white,
+                  ),
+                  elevation: 8.0,
+                  color: Color.fromRGBO(0, 0, 0, 0.6),
+                  margin: EdgeInsets.only(bottom: 20),
+                  child: Padding(
+                    padding: EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(recipe['recipeImage']),
                         ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ),
-                    SizedBox(height: 5),
-                    Text(
-                      recipe.recipeDescription,
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w200,
-                        color: Colors.white,
-                      ),
-                    ),
-                    SizedBox(height: 15),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 15,
-                          vertical: 20,
+                        SizedBox(height: 12),
+                        Text(
+                          recipe['recipeName'],
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      onPressed: () {
-                        Navigator.pushNamed(
-                          context,
-                          '/recipeDetails',
-                          arguments: recipe.id,
-                        );
-                      },
-                      child: Text('View Recipe'),
+                        SizedBox(height: 8),
+                        Text(
+                          recipe['smallDescription'],
+                          style: TextStyle(fontSize: 14, color: Colors.white70),
+                        ),
+                        SizedBox(height: 16),
+                        Align(
+                          alignment: Alignment.center,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 15,
+                                vertical: 20,
+                              ),
+                            ),
+                            onPressed: () {
+                              Navigator.pushNamed(
+                                context,
+                                '/recipeDetails',
+                                arguments: recipe['id'],
+                              );
+                            },
+                            child: Text('View Recipe'),
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-              ),
+                  ),
+                );
+              },
             ),
           ),
         ],
