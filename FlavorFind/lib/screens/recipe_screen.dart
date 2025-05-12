@@ -183,6 +183,15 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
                           color: Color.fromRGBO(240, 234, 210, 1),
                         ),
                       ),
+                      Text(
+                        '* per serving',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w300,
+                          fontStyle: FontStyle.italic,
+                          color: Colors.white,
+                        ),
+                      ),
                       SizedBox(height: 5),
                       BulletedList(
                         bullet: Icon(Icons.circle, size: 7, color: Colors.red),
