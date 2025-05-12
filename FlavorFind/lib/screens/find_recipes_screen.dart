@@ -1,3 +1,5 @@
+import 'package:flavorfind/recipe_screens/oats_almond_butter.dart';
+
 import '../exports.dart';
 
 class IngredientCategory {
@@ -289,6 +291,16 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => AppleLentilsPeanutOil()),
+        );
+        break;
+      // Oats Almond Butter group
+      case ['Almond', 'Oats', 'Butter'] ||
+          ['Almond', 'Butter'] ||
+          ['Oats', 'Butter'] ||
+          ['Almond', 'Oats']:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => OatsAlmondButter()),
         );
         break;
     }
