@@ -66,9 +66,12 @@ class _MangoChickpeasCanolaOilState extends State<MangoChickpeasCanolaOil> {
             ),
           ),
           SmoothListView.builder(
+            smoothScroll: true,
+            physics: ScrollPhysics(parent: BouncingScrollPhysics()),
             duration: Duration(milliseconds: 350),
             itemCount: recipes.length,
             itemBuilder: (context, index) {
+              final recipe = recipes[index];
               return RecipeCard(
                 recipe: Recipes(
                   id: recipes[index]['id'],
