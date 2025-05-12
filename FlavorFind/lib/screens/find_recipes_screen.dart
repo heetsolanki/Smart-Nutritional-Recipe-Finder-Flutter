@@ -1,5 +1,3 @@
-import 'package:flavorfind/recipe_screens/oats_almond_butter.dart';
-
 import '../exports.dart';
 
 class IngredientCategory {
@@ -232,7 +230,6 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
             duration: Duration(seconds: 2),
           ),
         );
-        _findRecipes();
       } else if (selectedIngredients.length == 1) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -251,68 +248,111 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
     }
   }
 
+  // void _findRecipes() {
+  //   switch (selectedIngredients) {
+  //     // Cheese Potato Olive-Oil group
+  //     case ['Cheese', 'Potato', 'Olive Oil'] ||
+  //         ['Cheese', 'Potato'] ||
+  //         ['Potato', 'Olive Oil'] ||
+  //         ['Cheese', 'Olive Oil']:
+  //       Navigator.push(
+  //         context,
+  //         MaterialPageRoute(builder: (context) => CheesePotatoOliveOil()),
+  //       );
+  //       break;
+  //     // Mango Chickpeas Canola-Oil group
+  //     case ['Mango', 'Chickpeas', 'Canola Oil'] ||
+  //         ['Mango', 'Chickpeas'] ||
+  //         ['Mango', 'Canola Oil'] ||
+  //         ['Chickpeas', 'Canola Oil']:
+  //       Navigator.push(
+  //         context,
+  //         MaterialPageRoute(builder: (context) => MangoChickpeasCanolaOil()),
+  //       );
+  //       break;
+  //     // Paneer Tomato Sesame-Oil group
+  //     case ['Paneer', 'Tomato', 'Sesame Oil'] ||
+  //         ['Paneer', 'Tomato'] ||
+  //         ['Paneer', 'Sesame Oil'] ||
+  //         ['Tomato', 'Sesame Oil']:
+  //       Navigator.push(
+  //         context,
+  //         MaterialPageRoute(builder: (context) => PaneerTomatoSesameOil()),
+  //       );
+  //       break;
+  //     // Apple Lentils Peanut-Oil group
+  //     case ['Apple', 'Lentils', 'Peanut Oil'] ||
+  //         ['Apple', 'Lentils'] ||
+  //         ['Lentils', 'Peanut Oil'] ||
+  //         ['Apple', 'Peanut Oil']:
+  //       Navigator.push(
+  //         context,
+  //         MaterialPageRoute(builder: (context) => AppleLentilsPeanutOil()),
+  //       );
+  //       break;
+  //     // Oats Almond Butter group
+  //     case ['Almond', 'Oats', 'Butter'] ||
+  //         ['Almond', 'Butter'] ||
+  //         ['Oats', 'Butter'] ||
+  //         ['Almond', 'Oats']:
+  //       Navigator.push(
+  //         context,
+  //         MaterialPageRoute(builder: (context) => OatsAlmondButter()),
+  //       );
+  //       break;
+  //     // Cashew Rice Corn Oil group
+  //     case ['Cashew', 'Rice', 'Corn Oil'] ||
+  //         ['Cashew', 'Rice'] ||
+  //         ['Rice', 'Corn Oil'] ||
+  //         ['Cashew', 'Corn Oil']:
+  //       Navigator.push(
+  //         context,
+  //         MaterialPageRoute(builder: (context) => CashewRiceCornOil()),
+  //       );
+  //       break;
+  //   }
+  // }
+
   void _findRecipes() {
-    switch (selectedIngredients) {
-      // Cheese Potato Olive-Oil group
-      case ['Cheese', 'Potato', 'Olive Oil'] ||
-          ['Cheese', 'Potato'] ||
-          ['Potato', 'Olive Oil'] ||
-          ['Cheese', 'Olive Oil']:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => CheesePotatoOliveOil()),
-        );
-        break;
-      // Mango Chickpeas Canola-Oil group
-      case ['Mango', 'Chickpeas', 'Canola Oil'] ||
-          ['Mango', 'Chickpeas'] ||
-          ['Mango', 'Canola Oil'] ||
-          ['Chickpeas', 'Canola Oil']:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => MangoChickpeasCanolaOil()),
-        );
-        break;
-      // Paneer Tomato Sesame-Oil group
-      case ['Paneer', 'Tomato', 'Sesame Oil'] ||
-          ['Paneer', 'Tomato'] ||
-          ['Paneer', 'Sesame Oil'] ||
-          ['Tomato', 'Sesame Oil']:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => PaneerTomatoSesameOil()),
-        );
-        break;
-      // Apple Lentils Peanut-Oil group
-      case ['Apple', 'Lentils', 'Peanut Oil'] ||
-          ['Apple', 'Lentils'] ||
-          ['Lentils', 'Peanut Oil'] ||
-          ['Apple', 'Peanut Oil']:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => AppleLentilsPeanutOil()),
-        );
-        break;
-      // Oats Almond Butter group
-      case ['Almond', 'Oats', 'Butter'] ||
-          ['Almond', 'Butter'] ||
-          ['Oats', 'Butter'] ||
-          ['Almond', 'Oats']:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => OatsAlmondButter()),
-        );
-        break;
-      // Cashew Rice Corn Oil group
-      case ['Cashew', 'Rice', 'Corn Oil'] ||
-          ['Cashew', 'Rice'] ||
-          ['Rice', 'Corn Oil'] ||
-          ['Cashew', 'Corn Oil']:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => CashewRiceCornOil()),
-        );
-        break;
+    selectedIngredients.clear();
+    for (var category in categories) {
+      category.selections.forEach((ingredient, isSelected) {
+        if (isSelected) selectedIngredients.add(ingredient);
+      });
+    }
+
+    print('Selected ingredients: $selectedIngredients');
+
+    final matchedRecipes =
+        recipes.where((recipe) {
+          final ingredients = recipe['matchedIngredients'];
+          if (ingredients == null || ingredients is! Iterable) return false;
+
+          final matchedCount =
+              ingredients
+                  .where(
+                    (ingredient) => selectedIngredients
+                        .map((e) => e.toLowerCase())
+                        .contains(ingredient.toLowerCase()),
+                  )
+                  .length;
+
+          print('Recipe: ${recipe['recipeName']} | Matches: $matchedCount');
+
+          return matchedCount >= 2;
+        }).toList();
+
+    if (matchedRecipes.isNotEmpty) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => RecipeCard(matchedRecipe: matchedRecipes),
+        ),
+      );
+    } else {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('No matching recipes found')));
     }
   }
 
@@ -398,7 +438,7 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
         height: 56.0,
         width: 118.0,
         child: FloatingActionButton(
-          onPressed: _saveAndFindRecipes,
+          onPressed: _findRecipes,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           backgroundColor: Color.fromRGBO(108, 88, 76, 1),
           foregroundColor: Color.fromRGBO(240, 234, 210, 1),
