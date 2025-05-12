@@ -5,10 +5,14 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Aloo_Cheese_Sabzi.png',
     'recipeName': 'Aloo Cheese Sabzi',
     'duration': '12 minutes',
+    'smallDescription':
+        'A flavorful Indian sabzi with tender potatoes and melted cheese.\n'
+        'Perfect with roti or naan for a comforting meal.',
     'recipeDescription':
         'Aloo Cheese Sabzi is a hearty and flavorful dish made with soft potatoes simmered in a spiced tomato-onion gravy, '
         'finished with a generous layer of melted cheese. The fusion of classic Indian flavors with creamy cheese makes it a delicious comfort '
         'meal, best enjoyed with roti, naan, or rice.',
+    'matchedIngredients': ['Cheese', 'Potato', 'Olive Oil'],
     'ingredients': [
       'Cheese (1/2 cup shredded, 56g)',
       'Potato (1 medium, 150g)',
@@ -45,10 +49,14 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Cheesy_Potato_Bake.png',
     'recipeName': 'Cheesy Potato Bake',
     'duration': '30 minutes',
+    'smallDescription':
+        'A creamy, oven-baked dish with layered potatoes and melted cheese.\n'
+        'Ideal as a comforting side or indulgent main.',
     'recipeDescription':
         'Cheesy Potato Bake is a rich, oven-baked delight featuring layers of thinly sliced potatoes smothered in a creamy, seasoned cheese sauce. '
         'Baked until golden and bubbling, each bite melts in your mouth with the perfect balance of softness, crisp edges, and cheesy goodness. Ideal as '
         'a comforting side or a standalone indulgence.',
+    'matchedIngredients': ['Cheese', 'Potato', 'Olive Oil'],
     'ingredients': [
       'Cheese (1/2 cup shredded, 56g)',
       'Potato (1 medium, 150g)',
@@ -85,9 +93,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Roasted_Potato_Cheese_Medley.png',
     'recipeName': 'Roasted Potato Cheese Medley',
     'duration': '30 minutes',
+    'smallDescription':
+        'Crispy roasted potatoes topped with melted cheese and oregano.\n'
+        'A hearty Mediterranean-inspired main dish.',
     'recipeDescription':
         'This Mediterranean-inspired dish features roasted potato chunks topped with melted cheese and a sprinkle of oregano. '
         'Crispy and flavorful, it’s a hearty main course. Olive oil and cheese deliver healthy fats and protein, while potatoes offer sustained energy.',
+    'matchedIngredients': ['Cheese', 'Potato', 'Olive Oil'],
     'ingredients': [
       'Cheese (1/2 cup shredded, 56g)',
       'Potato (1 medium, 150g)',
@@ -125,9 +137,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Chana_Mango_Masala.png',
     'recipeName': 'Chana Mango Masala',
     'duration': '10 minutes',
+    'smallDescription':
+        'Sweet mango and chickpeas spiced with cumin for a quick masala.\n'
+        'Pairs perfectly with rice for a vibrant meal.',
     'recipeDescription':
         'A sweet and savory Indian dish blending juicy mango with hearty chickpeas, spiced with cumin for depth. '
         'Ready in minutes, it pairs perfectly with rice. Chickpeas provide plant-based protein, while mango adds vitamin C and vibrant flavor.',
+    'matchedIngredients': ['Chickpea', 'Mango', 'Canola Oil'],
     'ingredients': [
       'Mango (1/2 medium, 100g)',
       'Chickpeas (1/2 cup canned, rinsed, 80g)',
@@ -163,9 +179,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Mango_Chickpea_Skillet.png',
     'recipeName': 'Mango Chickpea Skillet',
     'duration': '8 minutes',
+    'smallDescription':
+        'Caramelized mango and chickpeas with a smoky paprika kick.\n'
+        'A quick, nutrient-packed side dish.',
     'recipeDescription':
         'This fusion dish combines caramelized mango and golden chickpeas with a smoky paprika kick, cooked in a skillet. '
         'It’s a quick, nutrient-packed side dish. The combination of mango’s antioxidants and chickpeas’ protein makes it both healthy and flavorful.',
+    'matchedIngredients': ['Chickpea', 'Mango', 'Canola Oil'],
     'ingredients': [
       'Mango (1/2 medium, 100g)',
       'Chickpeas (1/2 cup canned, rinsed, 80g)',
@@ -201,9 +221,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Mango_Chickpea_Bake.png',
     'recipeName': 'Mango Chickpea Bake',
     'duration': '20 minutes',
+    'smallDescription':
+        'Mango and chickpeas baked with thyme for a hearty dish.\n'
+        'A Mediterranean-inspired main with vibrant flavors.',
     'recipeDescription':
         'A Mediterranean-style bake featuring mango and chickpeas melded with thyme for a subtle herbal note. '
         'This warm, hearty main dish is easy to prepare. Canola oil and chickpeas ensure a balanced, protein-rich meal with mango’s vibrant sweetness.',
+    'matchedIngredients': ['Chickpea', 'Mango', 'Canola Oil'],
     'ingredients': [
       'Mango (1/2 medium, 100g)',
       'Chickpeas (1/2 cup canned, rinsed, 80g)',
@@ -240,9 +264,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Paneer_Tomato_Curry.png',
     'recipeName': 'Paneer Tomato Curry',
     'duration': '10 minutes',
+    'smallDescription':
+        'Soft paneer in a rich, turmeric-spiced tomato curry.\n'
+        'A quick Indian main, perfect with roti.',
     'recipeDescription':
         'A rich Indian curry with soft paneer and juicy tomatoes, enhanced by turmeric’s warm hue and flavor. '
         'Quick to make, it’s ideal with roti. Paneer delivers protein, while tomatoes add lycopene for a nutritious main dish.',
+    'matchedIngredients': ['Paneer', 'Tomato', 'Sesame Oil'],
     'ingredients': [
       'Paneer (100g, cubed)',
       'Tomato (1 medium, 123g, chopped)',
@@ -278,9 +306,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Paneer_Tomato_Skillet.png',
     'recipeName': 'Paneer Tomato Skillet',
     'duration': '8 minutes',
+    'smallDescription':
+        'Golden paneer and tomatoes with a peppery kick.\n'
+        'A quick, protein-packed Western side dish.',
     'recipeDescription':
         'A quick Western skillet dish with golden paneer cubes and soft tomatoes, seasoned with black pepper for simplicity. '
         'It’s a versatile, protein-packed side. Sesame oil adds a nutty depth, complementing the fresh tomato flavor.',
+    'matchedIngredients': ['Paneer', 'Tomato', 'Sesame Oil'],
     'ingredients': [
       'Paneer (100g, cubed)',
       'Tomato (1 medium, 123g, chopped)',
@@ -316,9 +348,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Roasted_Paneer_Tomato_Medley.png',
     'recipeName': 'Roasted Paneer Tomato Medley',
     'duration': '15 minutes',
+    'smallDescription':
+        'Roasted paneer and tomatoes with fragrant rosemary.\n'
+        'A wholesome Mediterranean main dish.',
     'recipeDescription':
         'This Mediterranean dish roasts paneer and tomatoes with rosemary for a fragrant, golden main course. '
         'The roasting process enhances flavors naturally. Paneer and sesame oil provide protein and healthy fats, making it both hearty and wholesome.',
+    'matchedIngredients': ['Paneer', 'Tomato', 'Sesame Oil'],
     'ingredients': [
       'Paneer (100g, cubed)',
       'Tomato (1 medium, 123g, cubed)',
@@ -355,9 +391,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Lentil_Apple_Sabzi.png',
     'recipeName': 'Lentil Apple Sabzi',
     'duration': '8 minutes',
+    'smallDescription':
+        'Sweet apples and earthy lentils in a coriander-spiced sabzi.\n'
+        'A quick Indian main, great with rice.',
     'recipeDescription':
         'A unique Indian sabzi blending sweet apples with earthy lentils, spiced with coriander for warmth. '
         'Quick and filling, it’s perfect with rice. Lentils offer fiber and protein, while apples add a nutritious, sweet contrast.',
+    'matchedIngredients': ['Apple', 'Lentils', 'Peanut Oil'],
     'ingredients': [
       'Apple (1/2 medium, 90g, diced)',
       'Lentils (1/2 cup cooked, 80g)',
@@ -393,9 +433,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Apple_Lentil_Bake.png',
     'recipeName': 'Apple Lentil Bake',
     'duration': '20 minutes',
+    'smallDescription':
+        'Diced apples and lentils baked with a hint of cinnamon.\n'
+        'A cozy, nutrient-dense Western side dish.',
     'recipeDescription':
         'A cozy Western bake combining diced apples and lentils with a hint of cinnamon for warmth. '
         'This nutrient-dense side dish is simple yet satisfying. Lentils provide protein, while apples and peanut oil add sweetness and healthy fats.',
+    'matchedIngredients': ['Apple', 'Lentils', 'Peanut Oil'],
     'ingredients': [
       'Apple (1/2 medium, 90g, diced)',
       'Lentils (1/2 cup cooked, 80g)',
@@ -431,9 +475,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Roasted_Apple_Lentil_Medley.png',
     'recipeName': 'Roasted Apple Lentil Medley',
     'duration': '20 minutes',
+    'smallDescription':
+        'Roasted apples and lentils with smoky paprika flavor.\n'
+        'A hearty, sweet-savory fusion main dish.',
     'recipeDescription':
         'This fusion dish roasts apple slices and lentils with smoked paprika for a sweet-smoky flavor profile. '
         'A delightful main course, it’s both hearty and healthy. The roasting enhances apple sweetness, paired with lentils’ protein and fiber.',
+    'matchedIngredients': ['Apple', 'Lentils', 'Peanut Oil'],
     'ingredients': [
       'Apple (1/2 medium, 90g, sliced)',
       'Lentils (1/2 cup cooked, 80g)',
@@ -470,9 +518,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Oat_Almond_Pulao.png',
     'recipeName': 'Oat Almond Pulao',
     'duration': '15 minutes',
+    'smallDescription':
+        'Toasted oats and almonds in a fragrant cardamom pulao.\n'
+        'A wholesome Indian main dish.',
     'recipeDescription':
         'A nutty Indian pulao with toasted oats and almonds, subtly flavored with cardamom for aroma. '
         'Quick to cook, it’s a wholesome main dish. Oats and almonds provide fiber and healthy fats for a satisfying meal.',
+    'matchedIngredients': ['Oats', 'Almond', 'Butter'],
     'ingredients': [
       'Oats (1/2 cup, 40g)',
       'Almond (1/4 cup chopped, 30g)',
@@ -508,9 +560,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Oat_Almond_Casserole.png',
     'recipeName': 'Oat Almond Casserole',
     'duration': '25 minutes',
+    'smallDescription':
+        'Oats and almonds baked with vanilla for a cozy casserole.\n'
+        'A nutrient-dense Western main dish.',
     'recipeDescription':
         'A hearty Western casserole with oats and almonds baked in milk, infused with vanilla for warmth. '
         'This comforting main dish is nutrient-dense and easy to make. Oats and almonds deliver fiber and protein for lasting energy.',
+    'matchedIngredients': ['Oats', 'Almond', 'Butter'],
     'ingredients': [
       'Oats (1/2 cup, 40g)',
       'Almond (1/4 cup chopped, 30g)',
@@ -546,9 +602,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Roasted_Oat_Almond_Mix.png',
     'recipeName': 'Roasted Oat Almond Mix',
     'duration': '15 minutes',
+    'smallDescription':
+        'Crunchy roasted oats and almonds with a honey glaze.\n'
+        'A nutritious Mediterranean side dish.',
     'recipeDescription':
         'A crunchy Mediterranean mix of roasted oats and almonds, lightly sweetened with honey for texture. '
         'Perfect as a side, it’s quick and nutritious. Oats and almonds offer heart-healthy fiber and fats with a nutty flavor.',
+    'matchedIngredients': ['Oats', 'Almond', 'Butter'],
     'ingredients': [
       'Oats (1/2 cup, 40g)',
       'Almond (1/4 cup chopped, 30g)',
@@ -585,9 +645,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Cashew_Rice_Pulao.png',
     'recipeName': 'Cashew Rice Pulao',
     'duration': '8 minutes',
+    'smallDescription':
+        'Fluffy rice and toasted cashews with a hint of cloves.\n'
+        'A fragrant Indian main dish.',
     'recipeDescription':
         'A fragrant Indian pulao with fluffy rice and toasted cashews, subtly spiced with cloves for warmth. '
         'Quick to prepare, it’s a satisfying main dish. Rice provides energy, while cashews add protein and healthy fats.',
+    'matchedIngredients': ['Rice', 'Cashew', 'Corn Oil'],
     'ingredients': [
       'Rice (1/2 cup cooked, 80g)',
       'Cashew (1/4 cup, 30g)',
@@ -622,9 +686,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Rice_Cashew_Skillet.png',
     'recipeName': 'Rice Cashew Skillet',
     'duration': '8 minutes',
+    'smallDescription':
+        'Toasted cashews and rice with savory garlic flavor.\n'
+        'A quick Western side dish.',
     'recipeDescription':
         'A simple Western skillet dish with toasted cashews and rice, enhanced by garlic powder for savory depth. '
         'Quick and versatile, it’s a great side dish. The combination of rice and cashews ensures energy and protein.',
+    'matchedIngredients': ['Rice', 'Cashew', 'Corn Oil'],
     'ingredients': [
       'Rice (1/2 cup cooked, 80g)',
       'Cashew (1/4 cup, 30g)',
@@ -660,9 +728,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Roasted_Rice_Cashew_Medley.png',
     'recipeName': 'Roasted Rice Cashew Medley',
     'duration': '15 minutes',
+    'smallDescription':
+        'Crunchy roasted rice and cashews with umami soy sauce.\n'
+        'A flavorful fusion main dish.',
     'recipeDescription':
         'A fusion-style roasted medley of rice and cashews with a soy sauce umami kick, creating a crunchy main dish. '
         'Quick to prepare, it’s both flavorful and nutritious. Rice and cashews offer carbs and protein for a balanced meal.',
+    'matchedIngredients': ['Rice', 'Cashew', 'Corn Oil'],
     'ingredients': [
       'Rice (1/2 cup cooked, 80g)',
       'Cashew (1/4 cup, 30g)',
@@ -699,9 +771,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Kela_Matar_Bhaji.png',
     'recipeName': 'Kela Matar Bhaji',
     'duration': '8 minutes',
+    'smallDescription':
+        'Mashed banana and peas in a mustard-seed bhaji.\n'
+        'A sweet-savory Indian main with paratha.',
     'recipeDescription':
         'A sweet-savory Indian bhaji with mashed banana and peas, tempered with mustard seeds for authenticity. '
         'Quick to cook, it pairs well with paratha. Banana and peas provide fiber and potassium for a nutritious main dish.',
+    'matchedIngredients': ['Banana', 'Peas', 'Olive Oil'],
     'ingredients': [
       'Banana (1/2 medium, 60g, mashed)',
       'Peas (1/2 cup cooked, 80g)',
@@ -737,9 +813,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Banana_Pea_Skillet.png',
     'recipeName': 'Banana Pea Skillet',
     'duration': '7 minutes',
+    'smallDescription':
+        'Banana slices and peas in a creamy coconut milk skillet.\n'
+        'A unique fusion side dish.',
     'recipeDescription':
-        'A fusion skillet dish with sliced bananas and peas, enrichedWITH coconut milk for creaminess and a lime finish. '
+        'A fusion skillet dish with sliced bananas and peas, enriched with coconut milk for creaminess and a lime finish. '
         'Quick and unique, it’s a delightful side. Banana’s potassium and peas’ protein make it nutritious and balanced.',
+    'matchedIngredients': ['Banana', 'Peas', 'Olive Oil'],
     'ingredients': [
       'Banana (1/2 medium, 60g, sliced)',
       'Peas (1/2 cup cooked, 80g)',
@@ -775,9 +855,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Roasted_Banana_Pea_Medley.png',
     'recipeName': 'Roasted Banana Pea Medley',
     'duration': '15 minutes',
+    'smallDescription':
+        'Caramelized bananas and peas roasted with mint.\n'
+        'A vibrant Mediterranean main dish.',
     'recipeDescription':
         'A Mediterranean-inspired roast with caramelized banana slices and peas, flavored with mint for freshness. '
         'This vibrant main dish is simple yet elegant. Olive oil and peas ensure heart-healthy fats and protein for a wholesome meal.',
+    'matchedIngredients': ['Banana', 'Peas', 'Olive Oil'],
     'ingredients': [
       'Banana (1/2 medium, 60g, sliced)',
       'Peas (1/2 cup cooked, 80g)',
@@ -814,9 +898,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Wheat_Flax_Khichdi.png',
     'recipeName': 'Wheat Flax Khichdi',
     'duration': '20 minutes',
+    'smallDescription':
+        'Cracked wheat and flax seeds in a creamy khichdi.\n'
+        'A comforting Indian main dish.',
     'recipeDescription':
         'A wholesome Indian khichdi with cracked wheat and flax seeds, simmered in milk with cumin for flavor. '
         'This hearty main dish is perfect for a comforting meal. Wheat and flax provide fiber and omega-3s for digestive health.',
+    'matchedIngredients': ['Wheat', 'Flax Seeds', 'Milk'],
     'ingredients': [
       'Wheat (1/4 cup cracked, 40g)',
       'Flax Seeds (1 tbsp, 10g)',
@@ -852,9 +940,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Wheat_Flax_Casserole.png',
     'recipeName': 'Wheat Flax Casserole',
     'duration': '30 minutes',
+    'smallDescription':
+        'Wheat and flax seeds baked with nutmeg in milk.\n'
+        'A cozy, fiber-rich Western main.',
     'recipeDescription':
         'A comforting Western casserole with cracked wheat and flax seeds baked in milk, subtly spiced with nutmeg. '
         'This fiber-rich main dish is perfect for a cozy meal. Milk and flax seeds add protein and healthy fats for balance.',
+    'matchedIngredients': ['Wheat', 'Flax Seeds', 'Milk'],
     'ingredients': [
       'Wheat (1/4 cup cracked, 40g)',
       'Flax Seeds (1 tbsp, 10g)',
@@ -878,7 +970,7 @@ List<Map<String, dynamic>> recipes = [
     'nutritionRationale': [
       'High-fiber casserole supports digestion.',
       'Milk and flax seeds add protein and healthy fats.',
-      'W Wheat ensures sustained energy.',
+      'Wheat ensures sustained energy.',
       'Nutmeg adds a warm flavor.',
       'Water ensures proper texture.',
     ],
@@ -890,9 +982,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Roasted_Wheat_Flax_Mix.png',
     'recipeName': 'Roasted Wheat Flax Mix',
     'duration': '30 minutes',
+    'smallDescription':
+        'Crunchy roasted wheat and flax with chili flakes.\n'
+        'A nutrient-packed fusion side dish.',
     'recipeDescription':
         'A crunchy fusion mix of roasted wheat and flax seeds with a chili flake kick, lightly bound with milk. '
         'This versatile side dish is quick and nutrient-packed. Wheat and flax offer fiber and omega-3s for a healthy boost.',
+    'matchedIngredients': ['Wheat', 'Flax Seeds', 'Milk'],
     'ingredients': [
       'Wheat (1/4 cup cracked, 40g)',
       'Flax Seeds (1 tbsp, 10g)',
@@ -930,9 +1026,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Grape_Bean_Sabzi.png',
     'recipeName': 'Grape Bean Sabzi',
     'duration': '8 minutes',
+    'smallDescription':
+        'Juicy grapes and beans in a coriander-spiced sabzi.\n'
+        'A sweet-savory Indian main with rice.',
     'recipeDescription':
         'A sweet-savory Indian sabzi with juicy grapes and tender beans, spiced with coriander seeds for warmth. '
         'Quick to make, it’s a delightful main with rice. Grapes and beans provide antioxidants and protein for a balanced dish.',
+    'matchedIngredients': ['Grapes', 'Beans', 'Canola Oil'],
     'ingredients': [
       'Grapes (1/2 cup, 75g)',
       'Beans (1/2 cup cooked, 80g)',
@@ -967,10 +1067,14 @@ List<Map<String, dynamic>> recipes = [
     'id': 26,
     'recipeImage': 'assets/images/recipes/Grape_Bean_Skillet.png',
     'recipeName': 'Grape Bean Skillet',
+    'smallDescription':
+        'Soft grapes and beans with savory onion powder.\n'
+        'A quick, nutrient-rich Western side.',
     'duration': '8 minutes',
     'recipeDescription':
         'A quick Western skillet dish with soft grapes and beans, flavored with onion powder for savory depth. '
         'This nutrient-rich side is perfect for any meal. Grapes add antioxidants, while beans provide protein and fiber.',
+    'matchedIngredients': ['Grapes', 'Beans', 'Canola Oil'],
     'ingredients': [
       'Grapes (1/2 cup, 75g)',
       'Beans (1/2 cup cooked, 80g)',
@@ -1006,9 +1110,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Roasted_Grape_Bean_Medley.png',
     'recipeName': 'Roasted Grape Bean Medley',
     'duration': '15 minutes',
+    'smallDescription':
+        'Sweet roasted grapes and beans with oregano.\n'
+        'A wholesome Mediterranean main dish.',
     'recipeDescription':
         'A Mediterranean roast with sweet roasted grapes and beans, infused with oregano for an herbal touch. '
         'This vibrant main dish is simple and wholesome. Canola oil and beans ensure healthy fats and protein for a balanced meal.',
+    'matchedIngredients': ['Grapes', 'Beans', 'Canola Oil'],
     'ingredients': [
       'Grapes (1/2 cup, 75g)',
       'Beans (1/2 cup cooked, 80g)',
@@ -1045,9 +1153,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Gajar_Chia_Sabzi.png',
     'recipeName': 'Gajar Chia Sabzi',
     'duration': '8 minutes',
+    'smallDescription':
+        'Grated carrots and chia seeds in a mustard-seed sabzi.\n'
+        'A vibrant Indian main with roti.',
     'recipeDescription':
         'A vibrant Indian sabzi with grated carrots and chia seeds, tempered with mustard seeds for authenticity. '
         'Quick to prepare, it’s perfect with roti. Carrots provide beta-carotene, while chia seeds add fiber and omega-3s.',
+    'matchedIngredients': ['Carrot', 'Chia Seeds', 'Sesame Oil'],
     'ingredients': [
       'Carrot (1 medium, 60g, grated)',
       'Chia Seeds (1 tbsp, 12g)',
@@ -1083,9 +1195,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Carrot_Chia_Skillet.png',
     'recipeName': 'Carrot Chia Skillet',
     'duration': '7 minutes',
+    'smallDescription':
+        'Sliced carrots and chia seeds with a peppery touch.\n'
+        'A colorful Western side dish.',
     'recipeDescription':
         'A simple Western skillet dish with sliced carrots and chia seeds, seasoned with black pepper for a classic touch. '
         'This quick side dish is nutrient-packed and colorful. Carrots and chia seeds offer vitamins and fiber for a healthy boost.',
+    'matchedIngredients': ['Carrot', 'Chia Seeds', 'Sesame Oil'],
     'ingredients': [
       'Carrot (1 medium, 60g, sliced)',
       'Chia Seeds (1 tbsp, 12g)',
@@ -1121,9 +1237,13 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Roasted_Carrot_Chia_Medley.png',
     'recipeName': 'Roasted Carrot Chia Medley',
     'duration': '20 minutes',
+    'smallDescription':
+        'Roasted carrots and chia seeds with thyme and honey.\n'
+        'A healthy Mediterranean main dish.',
     'recipeDescription':
         'A Mediterranean roast with tender carrot slices and chia seeds, flavored with thyme and a touch of honey for sweetness. '
         'This vibrant main dish is both healthy and flavorful. Carrots and chia seeds provide fiber and antioxidants for wellness.',
+    'matchedIngredients': ['Carrot', 'Chia Seeds', 'Sesame Oil'],
     'ingredients': [
       'Carrot (1 medium, 60g, sliced)',
       'Chia Seeds (1 tbsp, 12g)',
@@ -1149,7 +1269,7 @@ List<Map<String, dynamic>> recipes = [
       'Chia seeds provide fiber and omega-3s.',
       'Sesame oil supports heart health.',
       'Thyme adds an herbal flavor.',
-      'Honey boosts caramelisation.',
+      'Honey boosts caramelization.',
     ],
     'isFavorite': false,
     'isTrending': false,
