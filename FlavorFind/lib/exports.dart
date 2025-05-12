@@ -9,11 +9,6 @@ export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:smooth_list_view/smooth_list_view.dart';
 
 export 'recipe_card.dart';
-export 'recipe_screens/apple_lentils_peanut_oil.dart';
-export 'recipe_screens/cashew_rice_corn_oil.dart';
-export 'recipe_screens/cheese_potato_olive_oil.dart';
-export 'recipe_screens/mango_chickpeas_canola_oil.dart';
-export 'recipe_screens/paneer_tomato_sesame_oil.dart';
 export 'recipes.dart';
 export 'screens/about_screen.dart';
 export 'screens/find_recipes_screen.dart';
