@@ -65,6 +65,8 @@ class _PaneerTomatoSesameOilState extends State<PaneerTomatoSesameOil> {
             ),
           ),
           SmoothListView.builder(
+            smoothScroll: true,
+            physics: ScrollPhysics(parent: BouncingScrollPhysics()),
             duration: Duration(milliseconds: 350),
             itemCount: recipes.length,
             itemBuilder: (context, index) {
