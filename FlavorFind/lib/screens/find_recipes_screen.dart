@@ -281,6 +281,16 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
           MaterialPageRoute(builder: (context) => PaneerTomatoSesameOil()),
         );
         break;
+      // Apple Lentils Peanut-Oil group
+      case ['Apple', 'Lentils', 'Peanut Oil'] ||
+          ['Apple', 'Lentils'] ||
+          ['Lentils', 'Peanut Oil'] ||
+          ['Apple', 'Peanut Oil']:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => AppleLentilsPeanutOil()),
+        );
+        break;
     }
   }
 
