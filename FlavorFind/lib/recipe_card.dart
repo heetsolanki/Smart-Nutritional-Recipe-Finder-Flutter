@@ -74,7 +74,13 @@ class RecipeCard extends StatelessWidget {
                           vertical: 20,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(
+                          context,
+                          '/recipeDetails',
+                          arguments: recipe.id,
+                        );
+                      },
                       child: Text('View Recipe'),
                     ),
                   ],
