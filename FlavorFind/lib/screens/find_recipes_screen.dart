@@ -199,7 +199,6 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
       },
     ),
   ];
-  final potatoCheeseOliveOil = <String>['Cheese', 'Potato', 'Olive Oil'];
   final selectedIngredients = <String>[];
 
   void _handleSelections(
@@ -327,6 +326,8 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
               ),
             ),
             child: SmoothListView(
+              smoothScroll: true,
+              physics: ScrollPhysics(parent: BouncingScrollPhysics()),
               padding: EdgeInsets.symmetric(vertical: 25, horizontal: 20),
               duration: Duration(milliseconds: 250),
               children: [
