@@ -303,6 +303,16 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
           MaterialPageRoute(builder: (context) => OatsAlmondButter()),
         );
         break;
+      // Cashew Rice Corn Oil group
+      case ['Cashew', 'Rice', 'Corn Oil'] ||
+          ['Cashew', 'Rice'] ||
+          ['Rice', 'Corn Oil'] ||
+          ['Cashew', 'Corn Oil']:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => CashewRiceCornOil()),
+        );
+        break;
     }
   }
 
