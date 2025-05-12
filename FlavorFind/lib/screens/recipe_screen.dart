@@ -254,6 +254,44 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
                               ),
                             ],
                           ),
+                          Row(
+                            children: [
+                              Text(
+                                'Fat',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.green,
+                                ),
+                              ),
+                              Text(
+                                ' : ${recipe!['nutritionalValues']['fat']}',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                'Fiber',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.green,
+                                ),
+                              ),
+                              Text(
+                                ' : ${recipe!['nutritionalValues']['fiber']}',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
 
