@@ -2,6 +2,7 @@ import 'exports.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   if (kIsWeb) {
     await Firebase.initializeApp(
       options: FirebaseOptions(
@@ -46,7 +47,10 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: const MyHomePage(),
-      routes: {'/findRecipes': (context) => FindRecipesScreen()},
+      routes: {
+        '/findRecipes': (context) => FindRecipesScreen(),
+        '/recipeDetails': (context) => RecipeDetailsScreen(),
+      },
     );
   }
 }
