@@ -11,21 +11,21 @@ class MangoChickpeasCanolaOil extends StatefulWidget {
 class _MangoChickpeasCanolaOilState extends State<MangoChickpeasCanolaOil> {
   final List<Map<String, dynamic>> recipes = [
     {
-      'id': 1,
+      'id': 4,
       'recipeName': 'Chana Mango Masala',
       'recipeImage': 'assets/images/recipes/Chana_Mango_Masala.png',
       'recipeDescription':
           'A tangy-spicy curry with chickpeas and ripe mango in bold Indian spices.',
     },
     {
-      'id': 2,
+      'id': 5,
       'recipeName': 'Mango Chickpea Skillet',
       'recipeImage': 'assets/images/recipes/Mango_Chickpea_Skillet.png',
       'recipeDescription':
           'A quick sauté of chickpeas and mangoes with herbs and warm spices.',
     },
     {
-      'id': 3,
+      'id': 6,
       'recipeName': 'Mango Chickpea Bake',
       'recipeImage': 'assets/images/recipes/Mango_Chickpea_Bake.png',
       'recipeDescription':

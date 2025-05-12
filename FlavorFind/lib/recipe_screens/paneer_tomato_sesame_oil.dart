@@ -10,21 +10,21 @@ class PaneerTomatoSesameOil extends StatefulWidget {
 class _PaneerTomatoSesameOilState extends State<PaneerTomatoSesameOil> {
   final List<Map<String, dynamic>> recipes = [
     {
-      'id': 1,
+      'id': 7,
       'recipeName': 'Paneer Tomato Curry',
       'recipeImage': 'assets/images/recipes/Paneer_Tomato_Curry.png',
       'recipeDescription':
           'Paneer cubes simmered in a rich, spiced tomato-based gravy.',
     },
     {
-      'id': 2,
+      'id': 8,
       'recipeName': 'Paneer Tomato Skillet',
       'recipeImage': 'assets/images/recipes/Paneer_Tomato_Skillet.png',
       'recipeDescription':
           'A quick stir-fry of paneer and tomatoes with aromatic spices.',
     },
     {
-      'id': 3,
+      'id': 9,
       'recipeName': 'Roasted Paneer Tomato Medley',
       'recipeImage': 'assets/images/recipes/Roasted_Paneer_Tomato_Medley.png',
       'recipeDescription':
