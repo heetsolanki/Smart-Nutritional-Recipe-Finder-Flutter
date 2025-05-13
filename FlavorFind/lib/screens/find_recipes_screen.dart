@@ -399,6 +399,8 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
               ),
             ),
             child: SmoothListView(
+              physics: ScrollPhysics(parent: BouncingScrollPhysics()),
+              smoothScroll: true,
               padding: EdgeInsets.symmetric(vertical: 25, horizontal: 20),
               duration: Duration(milliseconds: 250),
               children: [
