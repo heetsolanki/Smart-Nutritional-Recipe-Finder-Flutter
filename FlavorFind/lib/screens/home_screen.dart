@@ -23,6 +23,8 @@ class HomeScreenState extends State<HomeScreen> {
               ),
             ),
             child: SmoothListView(
+              smoothScroll: true,
+              physics: ScrollPhysics(parent: BouncingScrollPhysics()),
               padding: EdgeInsets.symmetric(horizontal: 10, vertical: 25),
               duration: Duration(milliseconds: 250),
               children: [

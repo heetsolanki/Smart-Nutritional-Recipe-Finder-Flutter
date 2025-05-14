@@ -212,107 +212,6 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
     });
   }
 
-  void _saveAndFindRecipes() {
-    selectedIngredients.clear();
-    for (var category in categories) {
-      category.selections.forEach((ingredient, isSelected) {
-        if (isSelected) {
-          selectedIngredients.add(ingredient);
-        }
-      });
-    }
-
-    if (selectedIngredients.isNotEmpty) {
-      if (selectedIngredients.length >= 2) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Selected Ingredients: $selectedIngredients'),
-            duration: Duration(seconds: 2),
-          ),
-        );
-      } else if (selectedIngredients.length == 1) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Please select at least 2 ingredients'),
-            duration: Duration(seconds: 2),
-          ),
-        );
-      }
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Please select at least 2 ingredients'),
-          duration: Duration(seconds: 2),
-        ),
-      );
-    }
-  }
-
-  // void _findRecipes() {
-  //   switch (selectedIngredients) {
-  //     // Cheese Potato Olive-Oil group
-  //     case ['Cheese', 'Potato', 'Olive Oil'] ||
-  //         ['Cheese', 'Potato'] ||
-  //         ['Potato', 'Olive Oil'] ||
-  //         ['Cheese', 'Olive Oil']:
-  //       Navigator.push(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => CheesePotatoOliveOil()),
-  //       );
-  //       break;
-  //     // Mango Chickpeas Canola-Oil group
-  //     case ['Mango', 'Chickpeas', 'Canola Oil'] ||
-  //         ['Mango', 'Chickpeas'] ||
-  //         ['Mango', 'Canola Oil'] ||
-  //         ['Chickpeas', 'Canola Oil']:
-  //       Navigator.push(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => MangoChickpeasCanolaOil()),
-  //       );
-  //       break;
-  //     // Paneer Tomato Sesame-Oil group
-  //     case ['Paneer', 'Tomato', 'Sesame Oil'] ||
-  //         ['Paneer', 'Tomato'] ||
-  //         ['Paneer', 'Sesame Oil'] ||
-  //         ['Tomato', 'Sesame Oil']:
-  //       Navigator.push(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => PaneerTomatoSesameOil()),
-  //       );
-  //       break;
-  //     // Apple Lentils Peanut-Oil group
-  //     case ['Apple', 'Lentils', 'Peanut Oil'] ||
-  //         ['Apple', 'Lentils'] ||
-  //         ['Lentils', 'Peanut Oil'] ||
-  //         ['Apple', 'Peanut Oil']:
-  //       Navigator.push(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => AppleLentilsPeanutOil()),
-  //       );
-  //       break;
-  //     // Oats Almond Butter group
-  //     case ['Almond', 'Oats', 'Butter'] ||
-  //         ['Almond', 'Butter'] ||
-  //         ['Oats', 'Butter'] ||
-  //         ['Almond', 'Oats']:
-  //       Navigator.push(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => OatsAlmondButter()),
-  //       );
-  //       break;
-  //     // Cashew Rice Corn Oil group
-  //     case ['Cashew', 'Rice', 'Corn Oil'] ||
-  //         ['Cashew', 'Rice'] ||
-  //         ['Rice', 'Corn Oil'] ||
-  //         ['Cashew', 'Corn Oil']:
-  //       Navigator.push(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => CashewRiceCornOil()),
-  //       );
-  //       break;
-  //   }
-  // }
-
   void _findRecipes() {
     selectedIngredients.clear();
     for (var category in categories) {
@@ -371,6 +270,7 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        scrolledUnderElevation: 10.0,
         elevation: 10.0,
         backgroundColor: Color.fromRGBO(108, 88, 76, 1),
         foregroundColor: Color.fromRGBO(240, 234, 210, 1),

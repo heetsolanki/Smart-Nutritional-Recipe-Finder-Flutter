@@ -50,6 +50,7 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        scrolledUnderElevation: 10.0,
         elevation: 10.0,
         backgroundColor: Color.fromRGBO(108, 88, 76, 1),
         foregroundColor: Color.fromRGBO(240, 234, 210, 1),
