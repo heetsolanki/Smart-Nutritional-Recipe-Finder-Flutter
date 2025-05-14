@@ -50,6 +50,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/findRecipes': (context) => FindRecipesScreen(),
         '/recipeDetails': (context) => RecipeDetailsScreen(),
+        '/favoriteRecipes': (context) => FavoriteRecipesScreen(),
       },
     );
   }
@@ -79,6 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        scrolledUnderElevation: 10.0,
         elevation: 10.0,
         backgroundColor: Color.fromRGBO(108, 88, 76, 1),
         foregroundColor: Color.fromRGBO(240, 234, 210, 1),
@@ -88,7 +90,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/favoriteRecipes');
+            },
             icon: Icon(Icons.favorite),
             iconSize: 27,
           ),

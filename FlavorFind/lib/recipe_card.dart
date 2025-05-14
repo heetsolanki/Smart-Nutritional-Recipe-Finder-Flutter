@@ -19,7 +19,9 @@ class RecipeCard extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/favoriteRecipes');
+            },
             icon: Icon(Icons.favorite),
             iconSize: 27,
           ),

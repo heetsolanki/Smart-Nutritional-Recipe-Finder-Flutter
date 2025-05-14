@@ -23,6 +23,8 @@ class TrendingScreenState extends State<TrendingScreen> {
               ),
             ),
             child: SmoothListView(
+              smoothScroll: true,
+              physics: ScrollPhysics(parent: BouncingScrollPhysics()),
               padding: EdgeInsets.symmetric(vertical: 25, horizontal: 20),
               duration: Duration(milliseconds: 250),
               children: [

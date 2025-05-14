@@ -6,7 +6,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Aloo Cheese Sabzi',
     'duration': '12 minutes',
     'smallDescription':
-        'A flavorful Indian sabzi with tender potatoes and melted cheese.\n'
+        'A flavorful Indian sabzi with tender potatoes and melted cheese. '
         'Perfect with roti or naan for a comforting meal.',
     'recipeDescription':
         'Aloo Cheese Sabzi is a hearty and flavorful dish made with soft potatoes simmered in a spiced tomato-onion gravy, '
@@ -50,7 +50,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Cheesy Potato Bake',
     'duration': '30 minutes',
     'smallDescription':
-        'A creamy, oven-baked dish with layered potatoes and melted cheese.\n'
+        'A creamy, oven-baked dish with layered potatoes and melted cheese. '
         'Ideal as a comforting side or indulgent main.',
     'recipeDescription':
         'Cheesy Potato Bake is a rich, oven-baked delight featuring layers of thinly sliced potatoes smothered in a creamy, seasoned cheese sauce. '
@@ -94,7 +94,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Roasted Potato Cheese Medley',
     'duration': '30 minutes',
     'smallDescription':
-        'Crispy roasted potatoes topped with melted cheese and oregano.\n'
+        'Crispy roasted potatoes topped with melted cheese and oregano. '
         'A hearty Mediterranean-inspired main dish.',
     'recipeDescription':
         'This Mediterranean-inspired dish features roasted potato chunks topped with melted cheese and a sprinkle of oregano. '
@@ -138,7 +138,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Chana Mango Masala',
     'duration': '10 minutes',
     'smallDescription':
-        'Sweet mango and chickpeas spiced with cumin for a quick masala.\n'
+        'Sweet mango and chickpeas spiced with cumin for a quick masala. '
         'Pairs perfectly with rice for a vibrant meal.',
     'recipeDescription':
         'A sweet and savory Indian dish blending juicy mango with hearty chickpeas, spiced with cumin for depth. '
@@ -180,7 +180,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Mango Chickpea Skillet',
     'duration': '8 minutes',
     'smallDescription':
-        'Caramelized mango and chickpeas with a smoky paprika kick.\n'
+        'Caramelized mango and chickpeas with a smoky paprika kick. '
         'A quick, nutrient-packed side dish.',
     'recipeDescription':
         'This fusion dish combines caramelized mango and golden chickpeas with a smoky paprika kick, cooked in a skillet. '
@@ -222,7 +222,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Mango Chickpea Bake',
     'duration': '20 minutes',
     'smallDescription':
-        'Mango and chickpeas baked with thyme for a hearty dish.\n'
+        'Mango and chickpeas baked with thyme for a hearty dish. '
         'A Mediterranean-inspired main with vibrant flavors.',
     'recipeDescription':
         'A Mediterranean-style bake featuring mango and chickpeas melded with thyme for a subtle herbal note. '
@@ -265,7 +265,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Paneer Tomato Curry',
     'duration': '10 minutes',
     'smallDescription':
-        'Soft paneer in a rich, turmeric-spiced tomato curry.\n'
+        'Soft paneer in a rich, turmeric-spiced tomato curry. '
         'A quick Indian main, perfect with roti.',
     'recipeDescription':
         'A rich Indian curry with soft paneer and juicy tomatoes, enhanced by turmeric’s warm hue and flavor. '
@@ -307,7 +307,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Paneer Tomato Skillet',
     'duration': '8 minutes',
     'smallDescription':
-        'Golden paneer and tomatoes with a peppery kick.\n'
+        'Golden paneer and tomatoes with a peppery kick. '
         'A quick, protein-packed Western side dish.',
     'recipeDescription':
         'A quick Western skillet dish with golden paneer cubes and soft tomatoes, seasoned with black pepper for simplicity. '
@@ -349,7 +349,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Roasted Paneer Tomato Medley',
     'duration': '15 minutes',
     'smallDescription':
-        'Roasted paneer and tomatoes with fragrant rosemary.\n'
+        'Roasted paneer and tomatoes with fragrant rosemary. '
         'A wholesome Mediterranean main dish.',
     'recipeDescription':
         'This Mediterranean dish roasts paneer and tomatoes with rosemary for a fragrant, golden main course. '
@@ -392,7 +392,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Lentil Apple Sabzi',
     'duration': '8 minutes',
     'smallDescription':
-        'Sweet apples and earthy lentils in a coriander-spiced sabzi.\n'
+        'Sweet apples and earthy lentils in a coriander-spiced sabzi. '
         'A quick Indian main, great with rice.',
     'recipeDescription':
         'A unique Indian sabzi blending sweet apples with earthy lentils, spiced with coriander for warmth. '
@@ -434,7 +434,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Apple Lentil Bake',
     'duration': '20 minutes',
     'smallDescription':
-        'Diced apples and lentils baked with a hint of cinnamon.\n'
+        'Diced apples and lentils baked with a hint of cinnamon. '
         'A cozy, nutrient-dense Western side dish.',
     'recipeDescription':
         'A cozy Western bake combining diced apples and lentils with a hint of cinnamon for warmth. '
@@ -476,7 +476,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Roasted Apple Lentil Medley',
     'duration': '20 minutes',
     'smallDescription':
-        'Roasted apples and lentils with smoky paprika flavor.\n'
+        'Roasted apples and lentils with smoky paprika flavor. '
         'A hearty, sweet-savory fusion main dish.',
     'recipeDescription':
         'This fusion dish roasts apple slices and lentils with smoked paprika for a sweet-smoky flavor profile. '
@@ -519,7 +519,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Oat Almond Pulao',
     'duration': '15 minutes',
     'smallDescription':
-        'Toasted oats and almonds in a fragrant cardamom pulao.\n'
+        'Toasted oats and almonds in a fragrant cardamom pulao. '
         'A wholesome Indian main dish.',
     'recipeDescription':
         'A nutty Indian pulao with toasted oats and almonds, subtly flavored with cardamom for aroma. '
@@ -561,7 +561,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Oat Almond Casserole',
     'duration': '25 minutes',
     'smallDescription':
-        'Oats and almonds baked with vanilla for a cozy casserole.\n'
+        'Oats and almonds baked with vanilla for a cozy casserole. '
         'A nutrient-dense Western main dish.',
     'recipeDescription':
         'A hearty Western casserole with oats and almonds baked in milk, infused with vanilla for warmth. '
@@ -603,7 +603,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Roasted Oat Almond Mix',
     'duration': '15 minutes',
     'smallDescription':
-        'Crunchy roasted oats and almonds with a honey glaze.\n'
+        'Crunchy roasted oats and almonds with a honey glaze. '
         'A nutritious Mediterranean side dish.',
     'recipeDescription':
         'A crunchy Mediterranean mix of roasted oats and almonds, lightly sweetened with honey for texture. '
@@ -646,7 +646,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Cashew Rice Pulao',
     'duration': '8 minutes',
     'smallDescription':
-        'Fluffy rice and toasted cashews with a hint of cloves.\n'
+        'Fluffy rice and toasted cashews with a hint of cloves. '
         'A fragrant Indian main dish.',
     'recipeDescription':
         'A fragrant Indian pulao with fluffy rice and toasted cashews, subtly spiced with cloves for warmth. '
@@ -687,7 +687,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Rice Cashew Skillet',
     'duration': '8 minutes',
     'smallDescription':
-        'Toasted cashews and rice with savory garlic flavor.\n'
+        'Toasted cashews and rice with savory garlic flavor. '
         'A quick Western side dish.',
     'recipeDescription':
         'A simple Western skillet dish with toasted cashews and rice, enhanced by garlic powder for savory depth. '
@@ -729,7 +729,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Roasted Rice Cashew Medley',
     'duration': '15 minutes',
     'smallDescription':
-        'Crunchy roasted rice and cashews with umami soy sauce.\n'
+        'Crunchy roasted rice and cashews with umami soy sauce. '
         'A flavorful fusion main dish.',
     'recipeDescription':
         'A fusion-style roasted medley of rice and cashews with a soy sauce umami kick, creating a crunchy main dish. '
@@ -772,7 +772,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Kela Matar Bhaji',
     'duration': '8 minutes',
     'smallDescription':
-        'Mashed banana and peas in a mustard-seed bhaji.\n'
+        'Mashed banana and peas in a mustard-seed bhaji. '
         'A sweet-savory Indian main with paratha.',
     'recipeDescription':
         'A sweet-savory Indian bhaji with mashed banana and peas, tempered with mustard seeds for authenticity. '
@@ -814,7 +814,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Banana Pea Skillet',
     'duration': '7 minutes',
     'smallDescription':
-        'Banana slices and peas in a creamy coconut milk skillet.\n'
+        'Banana slices and peas in a creamy coconut milk skillet. '
         'A unique fusion side dish.',
     'recipeDescription':
         'A fusion skillet dish with sliced bananas and peas, enriched with coconut milk for creaminess and a lime finish. '
@@ -856,7 +856,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Roasted Banana Pea Medley',
     'duration': '15 minutes',
     'smallDescription':
-        'Caramelized bananas and peas roasted with mint.\n'
+        'Caramelized bananas and peas roasted with mint. '
         'A vibrant Mediterranean main dish.',
     'recipeDescription':
         'A Mediterranean-inspired roast with caramelized banana slices and peas, flavored with mint for freshness. '
@@ -899,7 +899,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Wheat Flax Khichdi',
     'duration': '20 minutes',
     'smallDescription':
-        'Cracked wheat and flax seeds in a creamy khichdi.\n'
+        'Cracked wheat and flax seeds in a creamy khichdi. '
         'A comforting Indian main dish.',
     'recipeDescription':
         'A wholesome Indian khichdi with cracked wheat and flax seeds, simmered in milk with cumin for flavor. '
@@ -941,7 +941,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Wheat Flax Casserole',
     'duration': '30 minutes',
     'smallDescription':
-        'Wheat and flax seeds baked with nutmeg in milk.\n'
+        'Wheat and flax seeds baked with nutmeg in milk. '
         'A cozy, fiber-rich Western main.',
     'recipeDescription':
         'A comforting Western casserole with cracked wheat and flax seeds baked in milk, subtly spiced with nutmeg. '
@@ -983,7 +983,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Roasted Wheat Flax Mix',
     'duration': '30 minutes',
     'smallDescription':
-        'Crunchy roasted wheat and flax with chili flakes.\n'
+        'Crunchy roasted wheat and flax with chili flakes. '
         'A nutrient-packed fusion side dish.',
     'recipeDescription':
         'A crunchy fusion mix of roasted wheat and flax seeds with a chili flake kick, lightly bound with milk. '
@@ -1027,7 +1027,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Grape Bean Sabzi',
     'duration': '8 minutes',
     'smallDescription':
-        'Juicy grapes and beans in a coriander-spiced sabzi.\n'
+        'Juicy grapes and beans in a coriander-spiced sabzi. '
         'A sweet-savory Indian main with rice.',
     'recipeDescription':
         'A sweet-savory Indian sabzi with juicy grapes and tender beans, spiced with coriander seeds for warmth. '
@@ -1068,7 +1068,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeImage': 'assets/images/recipes/Grape_Bean_Skillet.png',
     'recipeName': 'Grape Bean Skillet',
     'smallDescription':
-        'Soft grapes and beans with savory onion powder.\n'
+        'Soft grapes and beans with savory onion powder. '
         'A quick, nutrient-rich Western side.',
     'duration': '8 minutes',
     'recipeDescription':
@@ -1111,7 +1111,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Roasted Grape Bean Medley',
     'duration': '15 minutes',
     'smallDescription':
-        'Sweet roasted grapes and beans with oregano.\n'
+        'Sweet roasted grapes and beans with oregano. '
         'A wholesome Mediterranean main dish.',
     'recipeDescription':
         'A Mediterranean roast with sweet roasted grapes and beans, infused with oregano for an herbal touch. '
@@ -1154,7 +1154,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Gajar Chia Sabzi',
     'duration': '8 minutes',
     'smallDescription':
-        'Grated carrots and chia seeds in a mustard-seed sabzi.\n'
+        'Grated carrots and chia seeds in a mustard-seed sabzi. '
         'A vibrant Indian main with roti.',
     'recipeDescription':
         'A vibrant Indian sabzi with grated carrots and chia seeds, tempered with mustard seeds for authenticity. '
@@ -1196,7 +1196,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Carrot Chia Skillet',
     'duration': '7 minutes',
     'smallDescription':
-        'Sliced carrots and chia seeds with a peppery touch.\n'
+        'Sliced carrots and chia seeds with a peppery touch. '
         'A colorful Western side dish.',
     'recipeDescription':
         'A simple Western skillet dish with sliced carrots and chia seeds, seasoned with black pepper for a classic touch. '
@@ -1238,7 +1238,7 @@ List<Map<String, dynamic>> recipes = [
     'recipeName': 'Roasted Carrot Chia Medley',
     'duration': '20 minutes',
     'smallDescription':
-        'Roasted carrots and chia seeds with thyme and honey.\n'
+        'Roasted carrots and chia seeds with thyme and honey. '
         'A healthy Mediterranean main dish.',
     'recipeDescription':
         'A Mediterranean roast with tender carrot slices and chia seeds, flavored with thyme and a touch of honey for sweetness. '

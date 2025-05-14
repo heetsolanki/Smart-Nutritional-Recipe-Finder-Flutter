@@ -60,7 +60,9 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/favoriteRecipes');
+            },
             icon: Icon(Icons.favorite),
             iconSize: 27,
           ),
