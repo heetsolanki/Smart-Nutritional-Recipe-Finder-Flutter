@@ -42,7 +42,7 @@ List<Map<String, dynamic>> recipes = [
       'Chili powder adds depth without overpowering the dish.',
     ],
     'isFavorite': false,
-    'isTrending': false,
+    'isTrending': true,
   },
   {
     'id': 2,
@@ -129,7 +129,7 @@ List<Map<String, dynamic>> recipes = [
       'Lemon juice brightens the dish.',
     ],
     'isFavorite': false,
-    'isTrending': false,
+    'isTrending': true,
   },
   // Chickpea, Mango, Canola Oil group
   {
@@ -299,7 +299,7 @@ List<Map<String, dynamic>> recipes = [
       'Ginger adds a warm, spicy note.',
     ],
     'isFavorite': false,
-    'isTrending': false,
+    'isTrending': true,
   },
   {
     'id': 8,
@@ -468,7 +468,7 @@ List<Map<String, dynamic>> recipes = [
       'Onion balances sweetness with savory depth.',
     ],
     'isFavorite': false,
-    'isTrending': false,
+    'isTrending': true,
   },
   {
     'id': 12,
@@ -637,7 +637,7 @@ List<Map<String, dynamic>> recipes = [
       'Lemon zest adds a citrus note.',
     ],
     'isFavorite': false,
-    'isTrending': false,
+    'isTrending': true,
   },
   // Rice, Cashew, Corn Oil group
   {
@@ -933,7 +933,7 @@ List<Map<String, dynamic>> recipes = [
       'Water is essential for cooking.',
     ],
     'isFavorite': false,
-    'isTrending': false,
+    'isTrending': true,
   },
   {
     'id': 23,
@@ -1188,7 +1188,7 @@ List<Map<String, dynamic>> recipes = [
       'Coriander enhances freshness.',
     ],
     'isFavorite': false,
-    'isTrending': false,
+    'isTrending': true,
   },
   {
     'id': 29,
