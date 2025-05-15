@@ -15,6 +15,11 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
   Color iconColor = Colors.white;
 
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
   void didChangeDependencies() {
     super.didChangeDependencies();
 
