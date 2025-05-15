@@ -280,7 +280,9 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/favoriteRecipes');
+            },
             icon: Icon(Icons.favorite),
             iconSize: 27,
           ),
