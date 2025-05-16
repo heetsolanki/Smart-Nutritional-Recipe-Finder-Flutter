@@ -2543,4 +2543,385 @@ List<Map<String, dynamic>> recipes = [
     'isFavorite': false,
     'isTrending': false,
   },
+  {
+    'id': 61,
+    'recipeImage': 'assets/images/recipes/Cucumber_Yogurt_Sabzi.png',
+    'recipeName': 'Cucumber Yogurt Sabzi',
+    'duration': '8 minutes',
+    'smallDescription':
+        'Crisp cucumber and Greek yogurt in a cumin-spiced sabzi. '
+        'A light Indian main with roti.',
+    'recipeDescription':
+        'Cucumber Yogurt Sabzi combines crisp cucumber with creamy Greek yogurt, tempered with cumin seeds for a refreshing Indian flavor. '
+        'This quick main dish is perfect with roti. Cucumber provides hydration, while Greek yogurt adds protein and probiotics.',
+    'matchedIngredients': ['Greek Yogurt', 'Cucumber', 'Groundnut Oil'],
+    'ingredients': [
+      'Greek Yogurt (1/2 cup, 120g)',
+      'Cucumber (1/2 medium, 100g, diced)',
+      'Groundnut Oil (1 tbsp, 13.5g)',
+      'Cumin Seeds (1/4 tsp)',
+      'Optional Green Chili (1/2, finely chopped)',
+    ],
+    'instructions': [
+      'Heat groundnut oil in a pan over medium heat, add cumin seeds, and let them sizzle for 30 seconds.',
+      'Add diced cucumber and optional green chili, cook for 5 minutes until tender.',
+      'Stir in Greek yogurt and a pinch of salt, cook for 3 minutes until creamy.',
+      'Serve hot as a main with roti.',
+    ],
+    'nutritionalValues': {
+      'calories': '140 kcal',
+      'protein': '6g',
+      'carbs': '6g',
+      'fat': '10g',
+      'fiber': '1g',
+    },
+    'nutritionRationale': [
+      'Cucumber provides hydration and vitamins.',
+      'Greek yogurt offers protein and probiotics.',
+      'Groundnut oil adds healthy fats and nutty flavor.',
+      'Cumin seeds enhance traditional Indian flavor.',
+      'Green chili adds a mild spicy kick.',
+    ],
+    'isFavorite': false,
+    'isTrending': false,
+  },
+  {
+    'id': 62,
+    'recipeImage': 'assets/images/recipes/Cucumber_Yogurt_Skillet.png',
+    'recipeName': 'Cucumber Yogurt Skillet',
+    'duration': '7 minutes',
+    'smallDescription':
+        'Cucumber and Greek yogurt with dill. '
+        'A fresh Western side dish.',
+    'recipeDescription':
+        'A Western skillet dish with crisp cucumber and creamy Greek yogurt, seasoned with dill for a fresh flavor. '
+        'This light side dish is quick and nutrient-rich. Cucumber and yogurt provide hydration and protein for a balanced dish.',
+    'matchedIngredients': ['Greek Yogurt', 'Cucumber', 'Groundnut Oil'],
+    'ingredients': [
+      'Greek Yogurt (1/2 cup, 120g)',
+      'Cucumber (1/2 medium, 100g, diced)',
+      'Groundnut Oil (1 tbsp, 13.5g)',
+      'Dried Dill (1/4 tsp)',
+      'Optional Lemon Juice (1 tsp)',
+    ],
+    'instructions': [
+      'Heat groundnut oil in a skillet over medium heat.',
+      'Add diced cucumber, cook for 5 minutes until tender.',
+      'Stir in Greek yogurt, dried dill, and a pinch of salt, cook for 2 minutes.',
+      'Drizzle with optional lemon juice and serve hot as a side.',
+    ],
+    'nutritionalValues': {
+      'calories': '135 kcal',
+      'protein': '6g',
+      'carbs': '6g',
+      'fat': '10g',
+      'fiber': '1g',
+    },
+    'nutritionRationale': [
+      'Skillet cooking preserves cucumber nutrients.',
+      'Greek yogurt adds protein and creaminess.',
+      'Groundnut oil provides healthy fats.',
+      'Dill enhances fresh, Western flavor.',
+      'Lemon juice brightens the dish.',
+    ],
+    'isFavorite': false,
+    'isTrending': false,
+  },
+  {
+    'id': 63,
+    'recipeImage': 'assets/images/recipes/Roasted_Cucumber_Yogurt_Medley.png',
+    'recipeName': 'Roasted Cucumber Yogurt Medley',
+    'duration': '15 minutes',
+    'smallDescription':
+        'Roasted cucumber and Greek yogurt with oregano. '
+        'A wholesome Mediterranean main dish.',
+    'recipeDescription':
+        'A Mediterranean roast with cucumber and Greek yogurt, flavored with oregano for an herbal touch. '
+        'This wholesome main dish is simple and nutritious. Cucumber provides hydration, while yogurt adds protein and probiotics.',
+    'matchedIngredients': ['Greek Yogurt', 'Cucumber', 'Groundnut Oil'],
+    'ingredients': [
+      'Greek Yogurt (1/2 cup, 120g)',
+      'Cucumber (1/2 medium, 100g, diced)',
+      'Groundnut Oil (1 tbsp, 13.5g)',
+      'Dried Oregano (1/4 tsp)',
+      'Optional Garlic Powder (1/4 tsp)',
+    ],
+    'instructions': [
+      'Preheat oven to 400°F (200°C).',
+      'Toss diced cucumber with groundnut oil, dried oregano, optional garlic powder, and a pinch of salt.',
+      'Roast on a baking sheet for 15 minutes until slightly caramelized.',
+      'Mix with Greek yogurt and serve warm as a main.',
+    ],
+    'nutritionalValues': {
+      'calories': '135 kcal',
+      'protein': '6g',
+      'carbs': '6g',
+      'fat': '10g',
+      'fiber': '1g',
+    },
+    'nutritionRationale': [
+      'Roasting enhances cucumber flavor with minimal oil.',
+      'Greek yogurt provides protein and probiotics.',
+      'Groundnut oil supports heart health.',
+      'Oregano adds a Mediterranean flavor.',
+      'Garlic powder enhances savory notes.',
+    ],
+    'isFavorite': false,
+    'isTrending': false,
+  },
+  // Group 2: Spinach, Pomegranate, Sunflower Oil
+  {
+    'id': 64,
+    'recipeImage': 'assets/images/recipes/Palak_Pomegranate_Sabzi.png',
+    'recipeName': 'Palak Pomegranate Sabzi',
+    'duration': '10 minutes',
+    'smallDescription':
+        'Spinach and pomegranate in a coriander-spiced sabzi. '
+        'A vibrant Indian main with rice.',
+    'recipeDescription':
+        'Palak Pomegranate Sabzi blends tender spinach with juicy pomegranate seeds, spiced with coriander for a vibrant Indian flavor. '
+        'This quick main dish is perfect with rice. Spinach provides iron, while pomegranate adds antioxidants.',
+    'matchedIngredients': ['Spinach', 'Pomegranate', 'Sunflower Oil'],
+    'ingredients': [
+      'Spinach (1 cup chopped, 30g)',
+      'Pomegranate (1/2 cup seeds, 75g)',
+      'Sunflower Oil (1 tbsp, 13.5g)',
+      'Coriander Powder (1/4 tsp)',
+      'Optional Fresh Cilantro (1 tbsp, chopped)',
+    ],
+    'instructions': [
+      'Heat sunflower oil in a pan over medium heat.',
+      'Add chopped spinach, cook for 5 minutes until wilted.',
+      'Stir in pomegranate seeds, coriander powder, and a pinch of salt, cook for 5 minutes.',
+      'Garnish with optional cilantro and serve hot as a main with rice.',
+    ],
+    'nutritionalValues': {
+      'calories': '150 kcal',
+      'protein': '3g',
+      'carbs': '12g',
+      'fat': '10g',
+      'fiber': '3g',
+    },
+    'nutritionRationale': [
+      'Spinach provides iron and vitamins A and C.',
+      'Pomegranate offers antioxidants and vitamin C.',
+      'Sunflower oil adds heart-healthy fats.',
+      'Coriander powder enhances traditional flavor.',
+      'Cilantro adds a fresh garnish.',
+    ],
+    'isFavorite': false,
+    'isTrending': false,
+  },
+  {
+    'id': 65,
+    'recipeImage': 'assets/images/recipes/Spinach_Pomegranate_Skillet.png',
+    'recipeName': 'Spinach Pomegranate Skillet',
+    'duration': '8 minutes',
+    'smallDescription':
+        'Spinach and pomegranate with garlic powder. '
+        'A nutrient-rich Western side dish.',
+    'recipeDescription':
+        'A Western skillet dish with wilted spinach and pomegranate seeds, seasoned with garlic powder for a savory flavor. '
+        'This quick side dish is colorful and nutrient-packed. Spinach and pomegranate provide vitamins and antioxidants.',
+    'matchedIngredients': ['Spinach', 'Pomegranate', 'Sunflower Oil'],
+    'ingredients': [
+      'Spinach (1 cup chopped, 30g)',
+      'Pomegranate (1/2 cup seeds, 75g)',
+      'Sunflower Oil (1 tbsp, 13.5g)',
+      'Garlic Powder (1/4 tsp)',
+      'Optional Fresh Parsley (1 tsp, chopped)',
+    ],
+    'instructions': [
+      'Heat sunflower oil in a skillet over medium heat.',
+      'Add chopped spinach, cook for 5 minutes until wilted.',
+      'Stir in pomegranate seeds, garlic powder, and a pinch of salt, cook for 3 minutes.',
+      'Garnish with optional parsley and serve hot as a side.',
+    ],
+    'nutritionalValues': {
+      'calories': '145 kcal',
+      'protein': '3g',
+      'carbs': '12g',
+      'fat': '10g',
+      'fiber': '3g',
+    },
+    'nutritionRationale': [
+      'Skillet cooking preserves spinach nutrients.',
+      'Pomegranate provides antioxidants.',
+      'Sunflower oil ensures healthy fats.',
+      'Garlic powder adds savory depth.',
+      'Parsley enhances freshness.',
+    ],
+    'isFavorite': false,
+    'isTrending': false,
+  },
+  {
+    'id': 66,
+    'recipeImage':
+        'assets/images/recipes/Roasted_Spinach_Pomegranate_Medley.png',
+    'recipeName': 'Roasted Spinach Pomegranate Medley',
+    'duration': '15 minutes',
+    'smallDescription':
+        'Roasted spinach and pomegranate with thyme. '
+        'A vibrant Mediterranean main dish.',
+    'recipeDescription':
+        'A Mediterranean roast with spinach and pomegranate seeds, flavored with thyme for an herbal touch. '
+        'This vibrant main dish is simple and nutritious. Spinach provides antioxidants, while pomegranate adds vitamin C.',
+    'matchedIngredients': ['Spinach', 'Pomegranate', 'Sunflower Oil'],
+    'ingredients': [
+      'Spinach (1 cup chopped, 30g)',
+      'Pomegranate (1/2 cup seeds, 75g)',
+      'Sunflower Oil (1 tbsp, 13.5g)',
+      'Dried Thyme (1/4 tsp)',
+      'Optional Lemon Juice (1 tsp)',
+    ],
+    'instructions': [
+      'Preheat oven to 400°F (200°C).',
+      'Toss chopped spinach and pomegranate seeds with sunflower oil, dried thyme, and a pinch of salt.',
+      'Roast on a baking sheet for 15 minutes until slightly crispy.',
+      'Drizzle with optional lemon juice and serve warm as a main.',
+    ],
+    'nutritionalValues': {
+      'calories': '145 kcal',
+      'protein': '3g',
+      'carbs': '12g',
+      'fat': '10g',
+      'fiber': '3g',
+    },
+    'nutritionRationale': [
+      'Roasting enhances spinach flavor with minimal oil.',
+      'Pomegranate provides antioxidants.',
+      'Sunflower oil supports heart health.',
+      'Thyme adds a Mediterranean flavor.',
+      'Lemon juice brightens the dish.',
+    ],
+    'isFavorite': false,
+    'isTrending': false,
+  },
+  // Group 3: Barley, Eggplant, Groundnut Oil
+  {
+    'id': 67,
+    'recipeImage': 'assets/images/recipes/Barley_Eggplant_Pulao.png',
+    'recipeName': 'Barley Eggplant Pulao',
+    'duration': '15 minutes',
+    'smallDescription':
+        'Barley and eggplant in a cumin-spiced pulao. '
+        'A hearty Indian main with curd.',
+    'recipeDescription':
+        'Barley Eggplant Pulao combines chewy barley with tender eggplant, spiced with cumin for a hearty Indian flavor. '
+        'This nutritious main dish is perfect with curd. Barley provides fiber, while eggplant adds antioxidants.',
+    'matchedIngredients': ['Barley', 'Eggplant', 'Groundnut Oil'],
+    'ingredients': [
+      'Barley (1/4 cup cooked, 50g)',
+      'Eggplant (1/2 medium, 100g, diced)',
+      'Groundnut Oil (1 tbsp, 13.5g)',
+      'Cumin Seeds (1/4 tsp)',
+      'Optional Fresh Coriander (1 tbsp, chopped)',
+    ],
+    'instructions': [
+      'Heat groundnut oil in a pan over medium heat, add cumin seeds, and let them sizzle for 30 seconds.',
+      'Add diced eggplant, cook for 7 minutes until tender.',
+      'Stir in cooked barley and a pinch of salt, cook for 5 minutes.',
+      'Garnish with optional coriander and serve hot as a main with curd.',
+    ],
+    'nutritionalValues': {
+      'calories': '160 kcal',
+      'protein': '4g',
+      'carbs': '20g',
+      'fat': '8g',
+      'fiber': '5g',
+    },
+    'nutritionRationale': [
+      'Barley provides fiber and complex carbs.',
+      'Eggplant offers antioxidants and fiber.',
+      'Groundnut oil adds healthy fats and nutty flavor.',
+      'Cumin seeds enhance traditional flavor.',
+      'Coriander adds a fresh garnish.',
+    ],
+    'isFavorite': false,
+    'isTrending': false,
+  },
+  {
+    'id': 68,
+    'recipeImage': 'assets/images/recipes/Barley_Eggplant_Skillet.png',
+    'recipeName': 'Barley Eggplant Skillet',
+    'duration': '10 minutes',
+    'smallDescription':
+        'Barley and eggplant with black pepper. '
+        'A savory Western side dish.',
+    'recipeDescription':
+        'A Western skillet dish with chewy barley and tender eggplant, seasoned with black pepper for a savory flavor. '
+        'This quick side dish is hearty and nutrient-rich. Barley and eggplant provide fiber and antioxidants.',
+    'matchedIngredients': ['Barley', 'Eggplant', 'Groundnut Oil'],
+    'ingredients': [
+      'Barley (1/4 cup cooked, 50g)',
+      'Eggplant (1/2 medium, 100g, diced)',
+      'Groundnut Oil (1 tbsp, 13.5g)',
+      'Black Pepper (1/4 tsp)',
+      'Optional Fresh Parsley (1 tsp, chopped)',
+    ],
+    'instructions': [
+      'Heat groundnut oil in a skillet over medium heat.',
+      'Add diced eggplant, cook for 7 minutes until tender.',
+      'Stir in cooked barley, black pepper, and a pinch of salt, cook for 3 minutes.',
+      'Garnish with optional parsley and serve hot as a side.',
+    ],
+    'nutritionalValues': {
+      'calories': '155 kcal',
+      'protein': '4g',
+      'carbs': '20g',
+      'fat': '8g',
+      'fiber': '5g',
+    },
+    'nutritionRationale': [
+      'Skillet cooking preserves nutrients with minimal oil.',
+      'Barley offers fiber and energy.',
+      'Eggplant provides antioxidants.',
+      'Black pepper adds a classic flavor.',
+      'Parsley enhances freshness.',
+    ],
+    'isFavorite': false,
+    'isTrending': false,
+  },
+  {
+    'id': 69,
+    'recipeImage': 'assets/images/recipes/Roasted_Barley_Eggplant_Medley.png',
+    'recipeName': 'Roasted Barley Eggplant Medley',
+    'duration': '20 minutes',
+    'smallDescription':
+        'Roasted barley and eggplant with rosemary. '
+        'A hearty Mediterranean main dish.',
+    'recipeDescription':
+        'A Mediterranean roast with barley and eggplant, flavored with rosemary for an herbal touch. '
+        'This hearty main dish is simple and nutritious. Barley provides fiber, while eggplant adds antioxidants.',
+    'matchedIngredients': ['Barley', 'Eggplant', 'Groundnut Oil'],
+    'ingredients': [
+      'Barley (1/4 cup cooked, 50g)',
+      'Eggplant (1/2 medium, 100g, diced)',
+      'Groundnut Oil (1 tbsp, 13.5g)',
+      'Dried Rosemary (1/4 tsp)',
+      'Optional Lemon Juice (1 tsp)',
+    ],
+    'instructions': [
+      'Preheat oven to 400°F (200°C).',
+      'Toss cooked barley and diced eggplant with groundnut oil, dried rosemary, and a pinch of salt.',
+      'Roast on a baking sheet for 20 minutes until golden.',
+      'Drizzle with optional lemon juice and serve warm as a main.',
+    ],
+    'nutritionalValues': {
+      'calories': '160 kcal',
+      'protein': '4g',
+      'carbs': '20g',
+      'fat': '8g',
+      'fiber': '5g',
+    },
+    'nutritionRationale': [
+      'Roasting enhances eggplant flavor.',
+      'Barley provides fiber and carbs.',
+      'Groundnut oil supports heart health.',
+      'Rosemary adds a Mediterranean flavor.',
+      'Lemon juice brightens the dish.',
+    ],
+    'isFavorite': false,
+    'isTrending': false,
+  },
 ];
