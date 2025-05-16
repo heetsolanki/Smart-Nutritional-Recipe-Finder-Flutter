@@ -263,6 +263,8 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
         'Corn Oil',
         'Sesame Oil',
         'Canola Oil',
+        'Groundnut Oil',
+        'Sunflower Oil',
       ],
       selections: {
         'Olive Oil': false,
@@ -270,6 +272,8 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
         'Corn Oil': false,
         'Sesame Oil': false,
         'Canola Oil': false,
+        'Groundnut Oil': false,
+        'Sunflower Oil': false,
       },
     ),
   ];
@@ -309,8 +313,6 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
                         .contains(ingredient.toLowerCase()),
                   )
                   .length;
-
-          print('Recipe: ${recipe['recipeName']} | Matches: $matchedCount');
 
           return matchedCount >= 2;
         }).toList();
