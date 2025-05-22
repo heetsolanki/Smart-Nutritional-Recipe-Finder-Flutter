@@ -1,304 +1,21 @@
 import '../exports.dart';
 
-class IngredientCategory {
-  final String id;
-  final String name;
-  final String iconPath;
-  final List<String> ingredients;
-  final Map<String, bool> selections;
-
-  IngredientCategory({
-    required this.id,
-    required this.name,
-    required this.iconPath,
-    required this.ingredients,
-    required this.selections,
-  });
-}
-
-class IngredientCategoryCard extends StatelessWidget {
-  final IngredientCategory category;
-  final Function(String, bool) onselectionChanged;
-  const IngredientCategoryCard({
-    super.key,
-    required this.category,
-    required this.onselectionChanged,
-  });
+class FindRecipes extends StatefulWidget {
+  const FindRecipes({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Card(
-      elevation: 12.0,
-      color: Color.fromRGBO(0, 0, 0, 0.6),
-      child: SizedBox(
-        width: 350,
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 15, vertical: 18),
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Image.asset(category.iconPath, height: 35),
-                  SizedBox(width: 10),
-                  Text(
-                    category.name,
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 15),
-              Wrap(
-                spacing: 8.0,
-                alignment: WrapAlignment.start,
-                runSpacing: 8.0,
-                children:
-                    category.ingredients
-                        .map(
-                          (ingredient) => IntrinsicWidth(
-                            child: CheckboxListTile(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(50),
-                              ),
-                              controlAffinity: ListTileControlAffinity.leading,
-                              tileColor:
-                                  category.selections[ingredient]!
-                                      ? Colors.green[500]
-                                      : Colors.transparent,
-                              activeColor: Color.fromRGBO(108, 88, 76, 1),
-                              checkColor: const Color.fromRGBO(
-                                240,
-                                234,
-                                210,
-                                1,
-                              ),
-                              value: category.selections[ingredient],
-                              onChanged: (value) {
-                                onselectionChanged(ingredient, value!);
-                              },
-                              title: Text(
-                                ingredient,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ),
-                          ),
-                        )
-                        .toList(),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
+  State<FindRecipes> createState() => _FindRecipesState();
 }
 
-class FindRecipesScreen extends StatefulWidget {
-  const FindRecipesScreen({super.key});
-  @override
-  FindRecipesScreenState createState() => FindRecipesScreenState();
-}
-
-class FindRecipesScreenState extends State<FindRecipesScreen> {
-  final List<IngredientCategory> categories = [
-    IngredientCategory(
-      id: 'Dairy',
-      name: 'Dairy',
-      iconPath: 'assets/images/icons/dairy.png',
-      ingredients: [
-        'Milk',
-        'Paneer',
-        'Cheese',
-        'Butter',
-        'Curd',
-        'Greek Yogurt',
-      ],
-      selections: {
-        'Milk': false,
-        'Paneer': false,
-        'Cheese': false,
-        'Butter': false,
-        'Curd': false,
-        'Greek Yogurt': false,
-      },
-    ),
-    IngredientCategory(
-      id: 'Vegetables',
-      name: 'Vegetables',
-      iconPath: 'assets/images/icons/vegetables.png',
-      ingredients: [
-        'Carrot',
-        'Potato',
-        'Tomato',
-        'Onion',
-        'Corn',
-        'Eggplant',
-        'Cucumber',
-        'Spinach',
-      ],
-      selections: {
-        'Carrot': false,
-        'Potato': false,
-        'Tomato': false,
-        'Onion': false,
-        'Corn': false,
-        'Eggplant': false,
-        'Cucumber': false,
-        'Spinach': false,
-      },
-    ),
-    IngredientCategory(
-      id: 'Fruits',
-      name: 'Fruits',
-      iconPath: 'assets/images/icons/fruits.png',
-      ingredients: [
-        'Apple',
-        'Banana',
-        'Grapes',
-        'Mango',
-        'Pomegranate',
-        'Pineapple',
-        'Watermelon',
-      ],
-      selections: {
-        'Apple': false,
-        'Banana': false,
-        'Grapes': false,
-        'Mango': false,
-        'Pomegranate': false,
-        'Pineapple': false,
-        'Watermelon': false,
-      },
-    ),
-    IngredientCategory(
-      id: 'Berries',
-      name: 'Berries',
-      iconPath: 'assets/images/icons/berries.png',
-      ingredients: [
-        'Strawberry',
-        'Blueberry',
-        'Raspberry',
-        'Cranberry',
-        'Gooseberry',
-      ],
-      selections: {
-        'Strawberry': false,
-        'Blueberry': false,
-        'Raspberry': false,
-        'Cranberry': false,
-        'Gooseberry': false,
-      },
-    ),
-    IngredientCategory(
-      id: 'Nuts & Seeds',
-      name: 'Nuts & Seeds',
-      iconPath: 'assets/images/icons/nuts.png',
-      ingredients: [
-        'Almond',
-        'Cashew',
-        'Flax Seeds',
-        'Chia Seeds',
-        'Pumpkin Seeds',
-        'Walnut',
-        'Onion Seeds',
-      ],
-      selections: {
-        'Almond': false,
-        'Cashew': false,
-        'Flax Seeds': false,
-        'Chia Seeds': false,
-        'Pumpkin Seeds': false,
-        'Walnut': false,
-        'Onion Seeds': false,
-      },
-    ),
-    IngredientCategory(
-      id: 'Grains & Cereals',
-      name: 'Grains & Cereals',
-      iconPath: 'assets/images/icons/grains.png',
-      ingredients: ['Wheat', 'Barley', 'Oats', 'Rice'],
-      selections: {
-        'Wheat': false,
-        'Barley': false,
-        'Oats': false,
-        'Rice': false,
-      },
-    ),
-    IngredientCategory(
-      id: 'Legumes',
-      name: 'Legumes',
-      iconPath: 'assets/images/icons/legumes.png',
-      ingredients: [
-        'Lentils',
-        'Chickpeas',
-        'Peas',
-        'Beans',
-        'Urad Dal',
-        'Chana Dal',
-        'Moong Dal',
-      ],
-      selections: {
-        'Lentils': false,
-        'Chickpeas': false,
-        'Peas': false,
-        'Beans': false,
-        'Urad Dal': false,
-        'Chana Dal': false,
-        'Moong Dal': false,
-      },
-    ),
-    IngredientCategory(
-      id: 'Oils',
-      name: 'Oils',
-      iconPath: 'assets/images/icons/oils.png',
-      ingredients: [
-        'Olive Oil',
-        'Peanut Oil',
-        'Corn Oil',
-        'Sesame Oil',
-        'Canola Oil',
-        'Groundnut Oil',
-        'Sunflower Oil',
-      ],
-      selections: {
-        'Olive Oil': false,
-        'Peanut Oil': false,
-        'Corn Oil': false,
-        'Sesame Oil': false,
-        'Canola Oil': false,
-        'Groundnut Oil': false,
-        'Sunflower Oil': false,
-      },
-    ),
-  ];
-  final potatoCheeseOliveOil = <String>['Cheese', 'Potato', 'Olive Oil'];
-  final selectedIngredients = <String>[];
-
-  void _handleSelections(
-    IngredientCategory category,
-    String ingredient,
-    bool value,
-  ) {
-    setState(() {
-      category.selections[ingredient] = value;
-    });
-  }
+class _FindRecipesState extends State<FindRecipes> {
+  final Map<String, bool> _selections = {};
 
   void _findRecipes() {
-    selectedIngredients.clear();
-    for (var category in categories) {
-      category.selections.forEach((ingredient, isSelected) {
-        if (isSelected) selectedIngredients.add(ingredient);
-      });
-    }
+    final List<String> selectedIngredients = [];
 
-    print('Selected ingredients: $selectedIngredients');
+    _selections.forEach((ingredient, isSelected) {
+      if (isSelected) selectedIngredients.add(ingredient);
+    });
 
     final matchedRecipes =
         recipes.where((recipe) {
@@ -329,17 +46,6 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
         context,
       ).showSnackBar(SnackBar(content: Text('No matching recipes found')));
     }
-  }
-
-  void _uncheckAll() {
-    setState(() {
-      for (var category in categories) {
-        category.selections.forEach((ingredient, isSelected) {
-          category.selections[ingredient] = false;
-        });
-      }
-    });
-    selectedIngredients.clear();
   }
 
   @override
@@ -376,54 +82,177 @@ class FindRecipesScreenState extends State<FindRecipesScreen> {
                 fit: BoxFit.cover,
               ),
             ),
-            child: SmoothListView(
-              physics: ScrollPhysics(parent: BouncingScrollPhysics()),
-              smoothScroll: true,
-              padding: EdgeInsets.symmetric(vertical: 25, horizontal: 20),
-              duration: Duration(milliseconds: 250),
-              children: [
-                Text(
-                  'Select ingredients: ',
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.left,
-                ),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: IconButton(
-                    onPressed: _uncheckAll,
-                    icon: Icon(Icons.refresh),
-                    tooltip: 'Clear Selection',
-                    color: Color.fromRGBO(240, 234, 210, 1),
-                    iconSize: 30,
-                  ),
-                ),
-                ...categories.map(
-                  (category) => IngredientCategoryCard(
-                    category: category,
-                    onselectionChanged:
-                        (ingredient, value) =>
-                            _handleSelections(category, ingredient, value),
-                  ),
-                ),
-              ],
+            child: StreamBuilder(
+              stream:
+                  FirebaseFirestore.instance
+                      .collection('Ingredients')
+                      .snapshots(),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.active) {
+                  if (snapshot.hasData) {
+                    return SmoothListView.builder(
+                      smoothScroll: true,
+                      physics: ScrollPhysics(parent: BouncingScrollPhysics()),
+                      duration: Duration(milliseconds: 250),
+                      itemCount: snapshot.data!.docs.length,
+                      itemBuilder: (context, index) {
+                        final categories = snapshot.data!.docs[index];
+
+                        final List<String> ingredients =
+                            (categories['ingredients'] as List<dynamic>?)
+                                ?.cast<String>() ??
+                            [];
+                        for (var ingredient in ingredients) {
+                          _selections.putIfAbsent(ingredient, () => false);
+                        }
+                        return Card(
+                          elevation: 12.0,
+                          color: Color.fromRGBO(0, 0, 0, 0.6),
+                          child: SizedBox(
+                            width: 350,
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 15,
+                                vertical: 18,
+                              ),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Image.asset(
+                                        '${categories['iconPath']}',
+                                        height: 35,
+                                      ),
+                                      SizedBox(width: 10),
+                                      Text(
+                                        categories['categoryName'],
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w500,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(height: 15),
+                                  StatefulBuilder(
+                                    builder: (
+                                      BuildContext context,
+                                      StateSetter setCheckboxState,
+                                    ) {
+                                      return Wrap(
+                                        spacing: 8.0,
+                                        alignment: WrapAlignment.start,
+                                        runSpacing: 8.0,
+                                        children:
+                                            ingredients.map<Widget>((
+                                              String ingredient,
+                                            ) {
+                                              return IntrinsicWidth(
+                                                child: CheckboxListTile(
+                                                  shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                          50,
+                                                        ),
+                                                  ),
+                                                  controlAffinity:
+                                                      ListTileControlAffinity
+                                                          .leading,
+                                                  tileColor:
+                                                      _selections[ingredient]!
+                                                          ? Colors.green[500]
+                                                          : Colors.transparent,
+                                                  activeColor: Color.fromRGBO(
+                                                    108,
+                                                    88,
+                                                    76,
+                                                    1,
+                                                  ),
+                                                  checkColor:
+                                                      const Color.fromRGBO(
+                                                        240,
+                                                        234,
+                                                        210,
+                                                        1,
+                                                      ),
+                                                  value:
+                                                      _selections[ingredient],
+                                                  onChanged: (value) {
+                                                    setCheckboxState(() {
+                                                      _selections[ingredient] =
+                                                          value ?? false;
+                                                    });
+                                                  },
+                                                  title: Text(
+                                                    ingredient,
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 15,
+                                                    ),
+                                                  ),
+                                                ),
+                                              );
+                                            }).toList(),
+                                      );
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    );
+                  } else if (snapshot.hasError) {
+                    return Center(
+                      child: Text('Error: ${snapshot.error.toString()}'),
+                    );
+                  } else {
+                    return Center(child: Text('No data found!'));
+                  }
+                } else {
+                  return Center(child: CircularProgressIndicator());
+                }
+              },
             ),
           ),
         ],
       ),
-      floatingActionButton: SizedBox(
-        height: 56.0,
-        width: 118.0,
-        child: FloatingActionButton(
-          onPressed: _findRecipes,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-          backgroundColor: Color.fromRGBO(108, 88, 76, 1),
-          foregroundColor: Color.fromRGBO(240, 234, 210, 1),
-          child: Text('Find Recipes', style: TextStyle(fontSize: 18)),
-        ),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            elevation: 10.0,
+            backgroundColor: Color.fromRGBO(108, 88, 76, 1),
+            foregroundColor: Color.fromRGBO(240, 234, 210, 1),
+            tooltip: 'Uncheck all',
+            child: Icon(Icons.refresh),
+            onPressed: () {
+              setState(() {
+                _selections.clear();
+              });
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  duration: Duration(seconds: 2),
+                  content: Align(
+                    alignment: Alignment.center,
+                    child: Text('All ingredients unchecked!'),
+                  ),
+                ),
+              );
+            },
+          ),
+          SizedBox(width: 10),
+          FloatingActionButton(
+            elevation: 10.0,
+            backgroundColor: Color.fromRGBO(108, 88, 76, 1),
+            foregroundColor: Color.fromRGBO(240, 234, 210, 1),
+            tooltip: 'Find Recipes',
+            onPressed: () => _findRecipes(),
+            child: Icon(Icons.search),
+          ),
+        ],
       ),
     );
   }
