@@ -2,8 +2,8 @@ export 'dart:io' show Platform;
 
 // Packages
 export 'package:bulleted_list/bulleted_list.dart';
+export 'package:cloud_firestore/cloud_firestore.dart';
 export 'package:firebase_core/firebase_core.dart';
-export 'package:flutter/foundation.dart';
 export 'package:flutter/material.dart';
 export 'package:flutter/services.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
