@@ -1,5 +1,4 @@
 import '../exports.dart';
-import 'alternate_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -47,6 +46,7 @@ class HomeScreenState extends State<HomeScreen> {
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 30),
+                    // Find Recipes Button
                     ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, '/findRecipes');
@@ -56,22 +56,8 @@ class HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(fontWeight: FontWeight.w400),
                       ),
                     ),
-                    SizedBox(height: 30),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => FindRecipes(),
-                          ),
-                        );
-                      },
-                      child: Text(
-                        'Find Recipes',
-                        style: TextStyle(fontWeight: FontWeight.w400),
-                      ),
-                    ),
                     SizedBox(height: 60),
+                    // Steps to use app
                     Card(
                       color: Color.fromRGBO(240, 234, 210, 1),
                       child: SizedBox(
