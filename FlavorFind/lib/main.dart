@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const MyHomePage(),
       routes: {
-        '/findRecipes': (context) => FindRecipesScreen(),
+        '/findRecipes': (context) => FindRecipes(),
         '/recipeDetails': (context) => RecipeDetailsScreen(),
         '/favoriteRecipes': (context) => FavoriteRecipesScreen(),
       },
