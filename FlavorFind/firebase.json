@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "flavorfind-heet",
+    "site": "flavorfind",
     "public": "build/web",
     "ignore": [
       "firebase.json",
