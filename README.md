@@ -5,14 +5,16 @@ Tired of staring at your fridge, wondering what to cook? Let FlavorFind turn you
 <br>
 ✨ Why You'll Love FlavorFind:
 <br>
-  🔍 Smart Ingredient-Based Search – Find recipes using what you already have 🧠
+<ul>
+  <li>🔍 Smart Ingredient-Based Search – Find recipes using what you already have 🧠</li>
   <br>
-  📊 Nutritional Breakdown – View calories, carbs, protein, fat & fiber for each recipe 💪
+  <li>📊 Nutritional Breakdown – View calories, carbs, protein, fat & fiber for each recipe 💪</li>
   <br>
-  🌟 Trending Recipes – Stay inspired with the hottest dishes of the week 🔥
+  <li>🌟 Trending Recipes – Stay inspired with the hottest dishes of the week 🔥</li>
   <br>
-  🧼 Clean & Easy-to-Use UI – Sleek design that’s simple and intuitive
+  <li>🧼 Clean & Easy-to-Use UI – Sleek design that’s simple and intuitive</li>
   <br>
-  👨‍💻 About the Developer – Learn more about the creator behind FlavorFind
+  <li>👨‍💻 About the Developer – Learn more about the creator behind FlavorFind</li>
+</ul>
 <br><br>
 Whether you're counting macros, avoiding waste, or just looking for your next favorite dish, FlavorFind is your smart kitchen companion. Cook smarter. Eat better. Live healthier. 🥗🍽️❤️
