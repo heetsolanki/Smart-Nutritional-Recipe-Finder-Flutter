@@ -2,12 +2,14 @@ import '../exports.dart';
 
 class TrendingScreen extends StatefulWidget {
   const TrendingScreen({super.key});
+
   @override
   TrendingScreenState createState() => TrendingScreenState();
 }
 
 class TrendingScreenState extends State<TrendingScreen> {
   late List<Map<String, dynamic>> trendingRecipe;
+
   @override
   void initState() {
     super.initState();
