@@ -31,8 +31,10 @@ dependencies:
   flutter:
     sdk: flutter
   firebase_core: ^3.13.0
-  cloud_firestore: ^5.6.7
+  cloud_firestore: ^5.6.8
+  url_launcher: ^6.3.1
   font_awesome_flutter: ^10.8.0
+  simple_icons: ^14.6.1
   smooth_list_view: ^2.0.2
   bulleted_list: ^0.0.1+0.1a
 
