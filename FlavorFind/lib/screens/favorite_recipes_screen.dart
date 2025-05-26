@@ -2,12 +2,14 @@ import '../exports.dart';
 
 class FavoriteRecipesScreen extends StatefulWidget {
   const FavoriteRecipesScreen({super.key});
+
   @override
   State<FavoriteRecipesScreen> createState() => _FavoriteRecipesScreenState();
 }
 
 class _FavoriteRecipesScreenState extends State<FavoriteRecipesScreen> {
   late List<Map<String, dynamic>> favoriteRecipe;
+
   @override
   void initState() {
     super.initState();
